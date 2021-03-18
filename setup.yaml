@@ -1,12 +1,12 @@
 users:
-  - name: wordpress
-    password: $MYSQL_WORDPRESS_PASSWORD
+  - name: veative_lyc
+    password: $MYSQL_VEATIVE_LYC_PASSWORD
     
 databases:
-  - name: wordpress
+  - name: veative_lyc
   
 acl:
-  - database: wordpress
-    user: wordpress
+  - database: veative_lyc
+    user: veative_lyc
     access: ALL
     
