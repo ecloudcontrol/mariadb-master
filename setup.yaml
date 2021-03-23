@@ -1,12 +1,12 @@
 users:
-  - name: veative_lyc
-    password: $MYSQL_VEATIVE_LYC_PASSWORD
+  - name: testuser
+    password: $DB_PASSWORD
     
 databases:
-  - name: veative_lyc
+  - name: lyc_veative
   
 acl:
-  - database: veative_lyc
-    user: veative_lyc
+  - database: lyc_veative
+    user: testuser
     access: ALL
     
