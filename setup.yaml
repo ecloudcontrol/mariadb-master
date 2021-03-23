@@ -1,6 +1,6 @@
 users:
   - name: testuser
-    password: $DB_PASSWORD
+    password: $MYSQL_TESTUSER_PASSWORD
     
 databases:
   - name: lyc_veative
