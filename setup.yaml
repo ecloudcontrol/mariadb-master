@@ -1,12 +1,20 @@
 users:
-  - name: testuser
-    password: $MYSQL_TESTUSER_PASSWORD
+  - name: veative
+    password: $MYSQL_VEATIVE_PASSWORD
     
 databases:
-  - name: lyc_veative
+  - name: veative
   
 acl:
-  - database: lyc_veative
-    user: testuser
+  - database: veative
+    user: veative
     access: ALL
     
+restore:
+  - database: veative
+    source:
+       file: lyc_veative.sql
+    user: veative
+    password: $MYSQL_VEATIVE_PASSWORD    # password of the 'user' above.
+    token: 20210325-0748   # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN).
+  
