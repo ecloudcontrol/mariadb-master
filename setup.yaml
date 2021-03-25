@@ -3,15 +3,15 @@ users:
     password: $MYSQL_VEATIVE_PASSWORD
     
 databases:
-  - name: veative
+  - name: lyc_veative
   
 acl:
-  - database: veative
+  - database: lyc_veative
     user: veative
     access: ALL
     
 restore:
-  - database: veative
+  - database: lyc_veative
     source:
        file: lyc_veative.sql
     user: veative
