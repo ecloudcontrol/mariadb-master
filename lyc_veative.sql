@@ -3,14 +3,14 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 16, 2021 at 11:01 AM
+-- Generation Time: Apr 04, 2021 at 22:06 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 7.4.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
 SET time_zone = "+00:00";
-
+  
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -309,6 +309,7 @@ CREATE TABLE `dt_behaviour_master_animal` (
   `ANML_ALIAS` varchar(4) NOT NULL,
   `ANML_DESC` text NOT NULL,
   `ANML_STRENGTH` text NOT NULL,
+  `ANML_FACTS` text NOT NULL,
   `ANML_MOTTO` varchar(200) NOT NULL,
   `ANML_TIPS` varchar(255) NOT NULL,
   `ANML_JOB_CHILDREN` text NOT NULL,
@@ -324,23 +325,23 @@ CREATE TABLE `dt_behaviour_master_animal` (
 -- Dumping data for table `dt_behaviour_master_animal`
 --
 
-INSERT INTO `dt_behaviour_master_animal` (`ANML_ID`, `ANMLGRP_ID`, `ANML_NAME`, `ANML_ALIAS`, `ANML_DESC`, `ANML_STRENGTH`, `ANML_MOTTO`, `ANML_TIPS`, `ANML_JOB_CHILDREN`, `ANML_JOB_YOUNG`, `ANML_JOB_PARTNER`, `ANML_JOB_BOSS`, `ANML_SNAPCHAT`, `ANML_IMG`, `ANML_ORDER`) VALUES
-(1, 1, 'Clownfish', 'ENFP', 'Clownfish are energetic, creative and busy fish. They are often thinking of new and clever ways of doing things, preferring variety and action to peace and quiet.', 'Enthusiastic clownfish are imaginative problem solvers who are always happy to improvise and are great at getting things done last minute.\r\n\r\nNaturally creative, they strive to be different and own their style. They are often risk- takers who prefer original thinking rather than playing by the rules - this is when their persuasiveness comes in handy.', 'Hey, I have had another idea!', 'Prioritize, focus and complete the important stuff.', 'Clownfish children enjoy variety and action, often getting bored easily and moving onto something new. They love taking risks and usually leave things until last minute. Imaginative and creative with a great sense of humour, at school they are often popular but can be a threat to some teachers and adults who don\'t appreciate their original thinking!', 'They\'re searching for their individual identity, drawn to express themselves through drama, words or art. They don\'t like being told what to do - they\'d rather work things out for themselves.', 'They\'re usually fun to be with. They\'re romantic and also like their partners to be romantic. Because they\'re easily bored and distracted, novelty and surprise are welcomed.', 'Visionary Clownfish value harmony and tend to nurture their staff. Sometimes their desire to create a meaningful impact in the world whilst working in organisations with strict targets or objectives can cause personal stress.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=0c8c45e7f2f5411e99b82e1f587d6c5e&metadata=01', '', 1),
-(2, 1, 'Seahorse', 'INFJ', 'Seahorses have been credited with deep, magical qualities and can also be deep, quiet and imaginative. Seahorses tend to live in warm waters and care for their young. The head shape of a Seahorse is as unique as a human fingerprint and they value their own and others uniqueness.', 'Patient Seahorses are great with compliCated situations, often using their imagination to solve problems. They are natural listeners but can also use their skills to be very persuasive. Seahorses are interested in the idea behind what they are doing, especially how it affects people.', 'Lets think about it', 'Do not just live inside your head - talk to others, share your ideas.', 'Seahorses are emotional dreamers that can be clingy toddlers, needing a parent to reassure and support. Often sweet and affectionate, they like to look after younger children around them. Mostly easy-going and good-natured, Seahorses see people as more important than rules and tend to have a few good friends.', 'At their best they can inspire others! They can be perfectionists and they like to please.', 'They\'re usually romantic and caring and like the same from their partner. They often come across as deep and intense but can be very funny when they want to be.', 'Caring, quiet, personal, inclusive, value harmony, expect deadlines to be met. Sometimes their desire to please people and follow the rules can cause personal stress.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=94ffbbd9dbf441bf97f341b026b90a82&metadata=01', '', 2),
-(3, 1, 'Dolphin', 'ENFJ', 'Many people say the Dolphin is their favourite animal. They are intelligent, warm, have great vision and charisma. Dolphins move fast to fit everything in, often enjoying busy and complicated social l', 'Friendly, cheerful Dolphins have bundles of energy. They are usually very popular and love a good party and spending time with family and friends.Dolphins are natural performers and are always looking to try out new things. They are enthusiastic and love variety and action. They are often imaginative and creative problem solvers, who focus on getting the job done. Emotionally, Dolphins are very warm. They are usually the ones deep in discussion, talking about their opinions, values and views, especially about people.', 'I need to feel loved', 'Take some time out for yourself. Do not spend all of your time solving other peoples problems.', 'At school Dolphins work best when they feel liked by their teachers and tend to enjoy going to school to make friends. They love a cuddle and wear their hearts on their sleeves, often putting others\' feelings and needs ahead of their own.', 'Dolphins tend to get along well with others. People like their warmth, enthusiasm and compassion', 'They\'re usually friendly, caring and loving. They work hard at making their relationships strong, deep and meaningful.', 'Visionary, personal, democratic, value/seek harmony, organised. Sometimes their desire to please people and follow the rules can cause personal stress.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=626d9a56de944174ba00fca74dd924ce&metadata=01', '', 3),
-(4, 1, 'Seal', 'INFP', 'Seals can be imaginative, supportive and playful around their social group. They can also be quiet and careful on land, wondering whether to jump in and trust their instincts or suss out a person or s', 'Seals are great at multi-tasking, often working on many things at once and love learning new skills. They are full of enthusiasm and interested in thinking behind an idea, and looking at how things affect people.', 'How will that affect everyone else?', 'Do not get lost inside your thoughts; involve others.', 'Seals are emotional dreamers that can be clingy toddlers, needing a parent to reassure and support. Often sweet and affectionate, they like to look after younger children around them. Mostly easy-going and good-natured, Seals see people as more important than rules and tend to have a few good friends.', 'Seals have strong inner values and beliefs that they like to live by - others can sometimes see them as sensitive, complex and deep. They travel through their teens trying to work out who they are and want to be.', 'They\'re usually romantic and loving and expect the same from their partner. Can be funny. Likely to be very sensitive to criticism.', 'A natural coach, Seals are quiet and caring bosses. They are people-focused, often bringing original approaches to their role.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=75cb77dba31e4782891f74265a2a3b45&metadata=01', '', 4),
-(5, 2, 'Black bear', 'ESTJ', 'The bear is a symbol of strength and power, and can be strong, organising and taking charge of situations so that things get done.', 'Reliable and realistic, bears love action, often focusing on outcomes and results to get things done. They are natural organisers that are great at acting and communicating quickly.', 'I will be the boss', 'You do not need to take charge all of the time. Look after yourself and ask people to help you out. Try not to get cross with people for not achieving your own very high standards unless its really necessary.', 'Black bears are mature, natural leaders who are always on the go and full of energy. They enjoy routine and order, and take pride in their honesty and reliability.\r\n\r\nBlack bears prefer real feedback to false comments but can sometimes need reminding that this approach isn\'t for everyone, and often need to learn more about being tactful and considering other people\'s feelings.', 'They\'re normally in control and in charge. They work out what needs to be done, how it should be done, and then do it.However, a bored bear can become rebellious and restless, they need a channel for their energy and go-for-it, problem-solving attitude.', 'They\'re usually quite independent but can appear tougher than they really are. They usually like to share their passions, ideas and beliefs.', 'Direct, decisive and fair, Black bears respect and follow procedures and expect deadlines to be met. They tend to focus on achieving or completing tasks.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=1f88c76de3ac42a1affa0c33c39495f3&metadata=01', '', 1),
-(6, 2, 'Polar bear', 'ISTJ', 'Polar bears are strong and determined. They are at the top of their food chain and they can enjoy being the boss. To hunt for food, they have to learn and perfect their skills. They also like to perfect their skills and then use them throughout their life', 'Polar bears are quiet and steady workers that pay attention to detail and like to stick to something until they get the job done. They are great at making decisions and following plans or rules, and usually like to be able to use skills that they have already learned.', 'I know exactly what I am doing', 'Take a break sometimes and praise people around you.', 'Intense and serious, Polar bears are trying to make sense of their world. They prefer solitary interests that require precision and skill rather than team games and hobbies.\r\nPolar bears value routine and structure and like to learn by being shown and correcting privately. They are keen to research and gain knowledge on subjects in detail, often becoming an expert in the things that they learn.', 'Often more adult than many of the adults around them! They value their independence, privacy and personal space. They\'re dependable, loyal and responsible.', 'They\'re usually more practical, loyal and sensible than romantic and spontaneous.', 'Direct and fair, respect and follow procedures, expect deadlines to be met, task-focused.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=db81afce55c044ff9b9e858f17b6c9a1&metadata=01', '', 2),
-(7, 2, 'Koala bear', 'ISFJ', 'Koalas are popular and warm animals. They like the safety of their eucalyptus trees and the security and safety of their families, being loyal and caring to those around them. Koalas have strong muscles around their pouch to protect their young and can al', 'Koalas are patient with people and details, usually bringing up relevant facts but as natural carers like to keep in mind other people`s beliefs, values and strengths. They are popular team members but rarely push their views forward unless asked.', 'I get on with it quietly', 'Can you be too nice? Learn to stick up for yourself.', 'Koalas are usually gentle, quiet and careful. They enjoy routine and structure, and value their personal space. They like to watch what\'s going on and try things out first before they feel confident that they understand.\r\nCool koalas like to be fashionable and are often talented in crafts, arts and music. They get on with everyone, and are often drawn towards animals and nature.', 'They can be seen as kind and quiet and are popular because they\'re sensitive to others\' needs. They\'re realistic, down to earth and respect tradition and authority.', 'They\'re usually loyal, loving and reliable. They go out of their way to support their partner.', 'Caring, quiet, respect and follow procedures and rules, expect deadlines to be met. Sometimes their desire to please people and follow the rules can cause personal stress.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=f68e412ca4674665a1e09239f8877234&metadata=01', '', 3),
-(8, 2, 'Teddy bear', 'ESFJ', 'Teddy bears are warm, friendly, loyal and popular.', 'Friendly Teddy bears are great at communiCating, often acting quickly and without a fuss. They are popular team members that always know what is going on and are great at keeping everyone else involved.', 'Lets all get along', 'Do not try and be perfect all of the time.', 'Friendly and cheerful, Teddy bears have bundles of energy and warmth. They are confident and love trying out new things. Sociable and party-loving, they enjoy seeing friends and often put their friends\' feelings ahead of their own.\r\nTeddy bears love cuddles and wear their hearts on their sleeves; they are at their best when they feel liked by teachers and other adults. They usually enjoy discussing opinions, values and views, especially about people.', 'They can be modest about their achievements and be surprised at how well they\'re liked by friends.', 'They\'re usually very loyal, loving, supportive and protective. They provide stability and structure and are friendly and sociable. They like to spend time with groups of friends and family, not just their boyfriend or girlfriend.', 'Sociable, caring, decisive, respect and follow procedures and rules, expect deadlines to be met. Sometimes their desire to please people and also follow the rules can cause personal stress.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=cb59ce74bac24ed69e19035f034c5920&metadata=01', '', 4),
-(9, 3, 'Barn Owl', 'INTJ', 'Barn owls are symbols of intelligence, determination and wisdom. A Barn owl hunts quietly over grassland looking for small animals. They can seem to be flying high, thinking big ideas quietly, while paying attention to the small details to solve problems and develop plans.', 'Patient and methodical, Barn owls are great with complicated situations and working on things for a long time. They are natural planners and imaginative problems solvers that are often good at being careful with facts. They are keen to research and gain knowledge on subjects in detail, often becoming an expert in the things that they learn.', 'I will work it out myself', 'Forgive yourself for not always reaching your own high standards.', 'Intense and serious, Barn owls are trying to make sense of their world and usually value routine and structure. They prefer interests that require precision and skill rather than team games and hobbies and enjoy the opportunity to create new ideas and opportunities. Barn owls like to learn by being shown and corrected privately.', 'At their best, they\'re clever, creative visionaries with the determination to achieve their goals, which means they may be considered distant, private and argumentative.', 'They\'re usually quite independent but can appear tougher than they really are. They often like to share their passions, ideas and beliefs.', 'Visionary, direct and organised. Detailed planners. Strategic and challenging. Like to stretch themselves and their team members. Tend to like and offer independence to their team members but will expect success in return.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=257ab3fbe01d4498ae19444713e1a6db&metadata=01', '', 1),
-(10, 3, 'Eagle', 'ENTJ', 'Eagles are symbols of power, leadership and strength. Often soaring high to generate new ideas and new ways to do things. Others are often willing to follow Eagles due to their good ideas and their determination to make them happen.', 'Eagles are natural entrepreneurs, using their imaginative and creative problem-solving skills to take charge of situations and people easily. They enjoy action and variety and are often the ones with the big ideas who suggest better ways of doing things.', 'I will be in charge', 'Take charge of the things you do best but do include ideas from others, especially when working in groups.', 'High-energy Eagles are natural leaders. Always on the go, they are usually ingenious and creative entrepreneurs. Eagles like to work with facts and focus on getting a task done.\r\nThey take great pride in their honesty and reliability, and in return prefer honest feedback to false compliments. Eagles sometimes need to be reminded that this approach isn\'t for everyone, often needing help to learn more about tact and other people\'s feelings.', 'Eagles are confident and often more mature than other people their age which can be seen by some as big-headed, but it isn\'t: it\'s being able to stick up for what they believe in. They can become rebellious and restless when bored and need a channel for their energy and go-for-it, problem-solving attitude.', 'They can be great fun to be with, though exhausting due to their drive and determination to lead and achieve things.', 'Energetic, visionary, direct and organised. Task-focused. Can be risk-takers.\r\nStrategic and challenging with a desire to stretch themselves and their teams. Tend to like and offer independence to their team members but will expect results in return. Most likely animal to lead from the front.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=20344f8b851a4371957af7b045ed60ce&metadata=01', '', 2),
-(11, 3, 'Falcon', 'ENTP', 'Falcons are the fastest animals in the world, flying up to about 120 miles per hour. They can also be fast with words and actions, moving quickly from idea to idea and task to task. Falcons migrate and often like to try out new experiences. When they speak, Falcons are loud.', 'Falcons are imaginative and spontaneous problem-solvers who love learning new skills. Alert, outspoken and always interesting company, they find it very easy to communiCate, making them natural negotiators. Falcons are accident-prone risk-takers who enjoy variety and action and who tend to leave things until the last minute. They get bored easily and soon like to move on to something new.', 'Everythings negotiable', 'Do not judge yourself too harshly; you can be your own worst critic.', 'Imaginative and creative, Falcons often have a great sense of humour and strive to be different with their own unique sense of style. They like nothing more than to push boundaries and enjoy negotiating changes in the rules.', 'They\'re adventurous, direct and assertive. They tend to ask why? Often popular but can be a threat to some teachers or adults who don\'t always appreciate their original thinking!', 'They try hard to impress their partner and they\'re usually witty and clever company.', 'Energetic, visionary, direct and flexible. Task-focused and can be risk takers. Generally keen to share their thoughts. Create a fast-paced and fun environment and like people who can \'fly by the seat of their pants\'. Tend to like and offer freedom and independence to their team members.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=2380c8c415f44f40925a97c5f924e66d&metadata=01', '', 3),
-(12, 3, 'Tawny Owl', 'INTP', 'Tawny owls are symbols of intelligence, determination and wisdom. They fly silently in the night and are often careful and quiet, speaking only when they have something interesting or useful to say.', 'Being natural inventors, Tawny owls love to learn new skills and try out new things. They enjoy tasks that require them to problem solve and use their imagination. Tawny owls pay attention to detail and are great at analysing and approaching things in a logical order.', 'I will analyse it to understand it.', 'Do not get lost inside your thoughts; involve others.', 'Tawny owls love learning, especially facts that help them understand how the world works. They enjoy competitive games, are very individualistic and are determined to do things their way.\r\nThey may not seek or need lots of physical attention, it doesn\'t mean they don\'t have feelings they just really like privacy and don\'t like being fussed over. Keen to question authority, they enjoy testing theories and ideas, including challenging their parents!', 'They\'re independent, quiet and flexible deep thinkers.', 'They usually share their ideas, passions and beliefs and like trying new things as a couple. They can be very self-critical.', 'Caring, quiet, personal, democratic, value and seek harmony, flexible. Quite rare as leaders (because they are not usually task-focused) and therefore can bring in original perspectives and approaches to their role.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=b4d472d1d1d14e459e0e7d07e793371a&metadata=01', '', 4),
-(13, 4, 'Cat', 'ISFP', 'Cats are popular and friendly, despite spending a lot of time on their own. They also tend to like exploring the outdoors.', 'Cats like to enjoy the here and now. Living in the moment, they find it easy to adapt and change their plans. They are popular team members but rarely push their views forward unless asked and like to be aware of people`s strengths and beliefs.', 'Can I play by myself for a while?', 'Try finishing the important things before starting new projects.', 'Cats are strongest in music or art and crafts, and often like solitary activities. They also love the outdoors and see life packed with adventures and experiences to try out and enjoy.\r\nCats may sometimes need to be encouraged to ask for help when they need it, rather than always trying to find their own solution.', 'They have an eye for quality and often have collections. They\'re often very close to their family and can feel nervous about leaving home. They\'re loyal friends, good at solving problems.', 'They\'re usually good fun to be with, though often like time on their own to recharge their batteries.', 'Caring, quiet, personal, democratic and flexible. Quite rare as leaders (because they are usually task-focused) and therefore can bring in original perspectives and approaches to their role. Tend to like and offer freedom and independence to their team members.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=d607aae8afb24bd4aa0b98698a503666&metadata=01', '', 1),
-(14, 4, 'Lion', 'ESFP', 'Lions are very sociable cats. They enjoy being with their families and relatives. Socialising and having fun as a way to be close to their loved ones. Lions are graceful and skillful in sport or leisure activities that interest them.', 'Lions are generous, friendly and great communicators so they are pretty good at knowing what is going on. As natural performers, they like to join in with people and have bundles of enthusiasm, making them popular team members.', 'Lets try this!', 'Do not play all of the time - recharge your batteries.', 'Often active and energetic, Lions enjoy activities and are usually the life and soul of a party, and if there isn\'t a party, they\'ll create one!\r\n\r\nLions love the outdoors, puddles, forests, you name it! They see life as full of adventures and experiences to try out and enjoy. Fun-loving Lions respond well to playing and surprises but they may need to be encouraged to rest and recharge their batteries from time to time!', 'They\'re usually popular and enthusiastic with a zest for life. They dislike routine and conflict - they may try to please everyone, which is difficult all of the time.', 'They\'re usually great fun to be with. They enjoy being with groups of people, not just as a couple.', 'Energetic, caring and flexible. People-focused. Can be risk takers. Generally keen to share their thoughts and create a fast-paced and fun environment. Tend to like and offer freedom and independence to their team members.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=718807c2c15c47e0aebf1486ef1a1d49&metadata=01', '', 2),
-(15, 4, 'Panther', 'ESTP', 'The Panther is a confident, fearless explorer, testing its skills in the jungle. They prefer action and variety. Can be fun to be with, but can bite (usually with a funny comment!), if things get boring.', 'On-the-spot problem solvers that can act and communicate quickly and decisively, Panthers find it easy to adapt to change. Panthers like to stand up for what they believe in even if others disagree - these skills also help them when trying to sell ideas and products to others.', 'Lets try this!', 'People can be tired just watching you whiz round. Plan and pick the projects worthy of your energy.', 'Curious about the world around them and experiencing as much of it as possible.\r\n\r\nOften the first to volunteer and take on a challenge, they are likely to be risk-takers so need to learn to think through the consequences of their actions before jumping in at the deep end.', 'They enjoy freedom and adventure, which can result in clashes with authority.', 'They\'re usually good fun to be with. They\'re full of energy and ideas.\r\nThey can be determined and easily become bored - so variety and action keep them happy.', 'Fun-loving and act on the spur of the moment. They like getting on with what needs to be done now rather than endlessly discussing the options and tend to focus on the excitement of the activity rather than rules and processes.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=681df4254d024623a8d87e6ca3c2cd34&metadata=01', '', 3),
-(16, 4, 'Tiger', 'ISTP', 'Tigers are rare, determined and strong. They are the largest cat and can be confident and assertive explorers, who enjoy finding out about the world around them.', 'Tigers are natural problem-solvers who like to work quietly and steadily on a number of things at once. They are flexible and like to try new ways to get things done.', 'I will work it out in my own time', 'Share your good ideas and humour around. Do not get wrapped up in your own thoughts and think you ca not ask for other peoples opinions or help.', 'Tigers love learning, especially facts that help them understand how the world works. They enjoy competitive games and are very individualistic and determined to do things their way.\r\nThey may not seek or need lots of physical attention, it doesn\'t mean they don\'t have feelings, they just really like privacy and don\'t like being fussed over. Keen to question authority, they enjoy testing theories and ideas, including challenging their parents!', 'They\'re honest and realistic with great common sense and a love for life. If someone doesn\'t make sense, they\'ll tell them so. This can sometimes make them seem stubborn and strong-willed.', 'They\'re usually good fun to be with, though may sometimes be too honest with their opinions for their own good.', 'Quiet and flexible, task-focused, can be risk-takers. Can keep their thoughts to themselves. Tend to like and offer freedom and independence to their team members.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=c0bc5eb16b52401d88b4fe1e5fc8800f&metadata=01', '', 4);
+INSERT INTO `dt_behaviour_master_animal` (`ANML_ID`, `ANMLGRP_ID`, `ANML_NAME`, `ANML_ALIAS`, `ANML_DESC`, `ANML_STRENGTH`, `ANML_FACTS`, `ANML_MOTTO`, `ANML_TIPS`, `ANML_JOB_CHILDREN`, `ANML_JOB_YOUNG`, `ANML_JOB_PARTNER`, `ANML_JOB_BOSS`, `ANML_SNAPCHAT`, `ANML_IMG`, `ANML_ORDER`) VALUES
+(1, 1, 'Clownfish', 'ENFP', 'Clownfish are energetic, creative and busy fish. They are often thinking of new and clever ways of doing things, preferring variety and action to peace and quiet.', 'Enthusiastic clownfish are imaginative problem solvers who are always happy to improvise and are great at getting things done last minute.\r\n\r\nNaturally creative, they strive to be different and own their style. They are often risk- takers who prefer original thinking rather than playing by the rules - this is when their persuasiveness comes in handy.', '', 'Hey, I have had another idea!', 'Prioritize, focus and complete the important stuff.', 'Clownfish children enjoy variety and action, often getting bored easily and moving onto something new. They love taking risks and usually leave things until last minute. Imaginative and creative with a great sense of humour, at school they are often popular but can be a threat to some teachers and adults who don\'t appreciate their original thinking!', 'They\'re searching for their individual identity, drawn to express themselves through drama, words or art. They don\'t like being told what to do - they\'d rather work things out for themselves.', 'They\'re usually fun to be with. They\'re romantic and also like their partners to be romantic. Because they\'re easily bored and distracted, novelty and surprise are welcomed.', 'Visionary Clownfish value harmony and tend to nurture their staff. Sometimes their desire to create a meaningful impact in the world whilst working in organisations with strict targets or objectives can cause personal stress.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=0c8c45e7f2f5411e99b82e1f587d6c5e&metadata=01', '', 1),
+(2, 1, 'Sea Turtle', 'INFJ', 'Sea Turtle have been credited with deep, magical qualities and can also be deep, quiet and imaginative. Seahorses tend to live in warm waters and care for their young. The head shape of a Seahorse is as unique as a human fingerprint and they value their own and others uniqueness.', 'Patient Sea Turtle are great with compliCated situations, often using their imagination to solve problems. They are natural listeners but can also use their skills to be very persuasive. Seahorses are interested in the idea behind what they are doing, especially how it affects people.', '', 'Lets think about it', 'Do not just live inside your head - talk to others, share your ideas.', 'Sea Turtle are emotional dreamers that can be clingy toddlers, needing a parent to reassure and support. Often sweet and affectionate, they like to look after younger children around them. Mostly easy-going and good-natured, Seahorses see people as more important than rules and tend to have a few good friends.', 'At their best they can inspire others! They can be perfectionists and they like to please.', 'They\'re usually romantic and caring and like the same from their partner. They often come across as deep and intense but can be very funny when they want to be.', 'Caring, quiet, personal, inclusive, value harmony, expect deadlines to be met. Sometimes their desire to please people and follow the rules can cause personal stress.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=94ffbbd9dbf441bf97f341b026b90a82&metadata=01', '', 2),
+(3, 1, 'Dolphin', 'ENFJ', 'Many people say the Dolphin is their favourite animal. They are intelligent, warm, have great vision and charisma. Dolphins move fast to fit everything in, often enjoying busy and complicated social l', 'Friendly, cheerful Dolphins have bundles of energy. They are usually very popular and love a good party and spending time with family and friends.Dolphins are natural performers and are always looking to try out new things. They are enthusiastic and love variety and action. They are often imaginative and creative problem solvers, who focus on getting the job done. Emotionally, Dolphins are very warm. They are usually the ones deep in discussion, talking about their opinions, values and views, especially about people.', '', 'I need to feel loved', 'Take some time out for yourself. Do not spend all of your time solving other peoples problems.', 'At school Dolphins work best when they feel liked by their teachers and tend to enjoy going to school to make friends. They love a cuddle and wear their hearts on their sleeves, often putting others\' feelings and needs ahead of their own.', 'Dolphins tend to get along well with others. People like their warmth, enthusiasm and compassion', 'They\'re usually friendly, caring and loving. They work hard at making their relationships strong, deep and meaningful.', 'Visionary, personal, democratic, value/seek harmony, organised. Sometimes their desire to please people and follow the rules can cause personal stress.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=626d9a56de944174ba00fca74dd924ce&metadata=01', '', 3),
+(4, 1, 'Seal', 'INFP', 'Seals can be imaginative, supportive and playful around their social group. They can also be quiet and careful on land, wondering whether to jump in and trust their instincts or suss out a person or s', 'Seals are great at multi-tasking, often working on many things at once and love learning new skills. They are full of enthusiasm and interested in thinking behind an idea, and looking at how things affect people.', '', 'How will that affect everyone else?', 'Do not get lost inside your thoughts; involve others.', 'Seals are emotional dreamers that can be clingy toddlers, needing a parent to reassure and support. Often sweet and affectionate, they like to look after younger children around them. Mostly easy-going and good-natured, Seals see people as more important than rules and tend to have a few good friends.', 'Seals have strong inner values and beliefs that they like to live by - others can sometimes see them as sensitive, complex and deep. They travel through their teens trying to work out who they are and want to be.', 'They\'re usually romantic and loving and expect the same from their partner. Can be funny. Likely to be very sensitive to criticism.', 'A natural coach, Seals are quiet and caring bosses. They are people-focused, often bringing original approaches to their role.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=75cb77dba31e4782891f74265a2a3b45&metadata=01', '', 4),
+(5, 2, 'Black bear', 'ESTJ', 'The bear is a symbol of strength and power, and can be strong, organising and taking charge of situations so that things get done.', 'Reliable and realistic, bears love action, often focusing on outcomes and results to get things done. They are natural organisers that are great at acting and communicating quickly.', '', 'I will be the boss', 'You do not need to take charge all of the time. Look after yourself and ask people to help you out. Try not to get cross with people for not achieving your own very high standards unless its really necessary.', 'Black bears are mature, natural leaders who are always on the go and full of energy. They enjoy routine and order, and take pride in their honesty and reliability.\r\n\r\nBlack bears prefer real feedback to false comments but can sometimes need reminding that this approach isn\'t for everyone, and often need to learn more about being tactful and considering other people\'s feelings.', 'They\'re normally in control and in charge. They work out what needs to be done, how it should be done, and then do it.However, a bored bear can become rebellious and restless, they need a channel for their energy and go-for-it, problem-solving attitude.', 'They\'re usually quite independent but can appear tougher than they really are. They usually like to share their passions, ideas and beliefs.', 'Direct, decisive and fair, Black bears respect and follow procedures and expect deadlines to be met. They tend to focus on achieving or completing tasks.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=1f88c76de3ac42a1affa0c33c39495f3&metadata=01', '', 1),
+(6, 2, 'Polar bear', 'ISTJ', 'Polar bears are strong and determined. They are at the top of their food chain and they can enjoy being the boss. To hunt for food, they have to learn and perfect their skills. They also like to perfect their skills and then use them throughout their life', 'Polar bears are quiet and steady workers that pay attention to detail and like to stick to something until they get the job done. They are great at making decisions and following plans or rules, and usually like to be able to use skills that they have already learned.', '<li>Intense, serious and dependable</li> \r\n<li>Prefer solitary interests that require precision and skill rather than team games and hobbies</li>\r\n <li>Value routine and structure and like to learn by being shown and corrected privately</li> \r\n<li>Keen to research and gain knowledge on subjects in detail, often becoming an expert in the things they learn</li> \r\n<li>Value independence, privacy and personal space</li> \r\n<li>Usually more practical, loyal and responsible than spontaneous</li>', 'I know exactly what I am doing', 'Take a break sometimes and praise people around you.', 'Intense and serious, Polar bears are trying to make sense of their world. They prefer solitary interests that require precision and skill rather than team games and hobbies.\r\nPolar bears value routine and structure and like to learn by being shown and correcting privately. They are keen to research and gain knowledge on subjects in detail, often becoming an expert in the things that they learn.', 'Often more adult than many of the adults around them! They value their independence, privacy and personal space. They\'re dependable, loyal and responsible.', 'They\'re usually more practical, loyal and sensible than romantic and spontaneous.', 'Direct and fair, respect and follow procedures, expect deadlines to be met, task-focused.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=db81afce55c044ff9b9e858f17b6c9a1&metadata=01', '', 2),
+(7, 2, 'Koala bear', 'ISFJ', 'Koalas are popular and warm animals. They like the safety of their eucalyptus trees and the security and safety of their families, being loyal and caring to those around them. Koalas have strong muscles around their pouch to protect their young and can al', 'Koalas are patient with people and details, usually bringing up relevant facts but as natural carers like to keep in mind other people`s beliefs, values and strengths. They are popular team members but rarely push their views forward unless asked.', '', 'I get on with it quietly', 'Can you be too nice? Learn to stick up for yourself.', 'Koalas are usually gentle, quiet and careful. They enjoy routine and structure, and value their personal space. They like to watch what\'s going on and try things out first before they feel confident that they understand.\r\nCool koalas like to be fashionable and are often talented in crafts, arts and music. They get on with everyone, and are often drawn towards animals and nature.', 'They can be seen as kind and quiet and are popular because they\'re sensitive to others\' needs. They\'re realistic, down to earth and respect tradition and authority.', 'They\'re usually loyal, loving and reliable. They go out of their way to support their partner.', 'Caring, quiet, respect and follow procedures and rules, expect deadlines to be met. Sometimes their desire to please people and follow the rules can cause personal stress.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=f68e412ca4674665a1e09239f8877234&metadata=01', '', 3),
+(8, 2, 'Panda', 'ESFJ', 'Panda are warm, friendly, loyal and popular.', 'Friendly Pandas are great at communiCating, often acting quickly and without a fuss. They are popular team members that always know what is going on and are great at keeping everyone else involved.', '', 'Lets all get along', 'Do not try and be perfect all of the time.', 'Friendly and cheerful, Teddy bears have bundles of energy and warmth. They are confident and love trying out new things. Sociable and party-loving, they enjoy seeing friends and often put their friends\' feelings ahead of their own.\r\nTeddy bears love cuddles and wear their hearts on their sleeves; they are at their best when they feel liked by teachers and other adults. They usually enjoy discussing opinions, values and views, especially about people.', 'They can be modest about their achievements and be surprised at how well they\'re liked by friends.', 'They\'re usually very loyal, loving, supportive and protective. They provide stability and structure and are friendly and sociable. They like to spend time with groups of friends and family, not just their boyfriend or girlfriend.', 'Sociable, caring, decisive, respect and follow procedures and rules, expect deadlines to be met. Sometimes their desire to please people and also follow the rules can cause personal stress.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=cb59ce74bac24ed69e19035f034c5920&metadata=01', '', 4),
+(9, 3, 'Barn Owl', 'INTJ', 'Barn owls are symbols of intelligence, determination and wisdom. A Barn owl hunts quietly over grassland looking for small animals. They can seem to be flying high, thinking big ideas quietly, while paying attention to the small details to solve problems and develop plans.', 'Patient and methodical, Barn owls are great with complicated situations and working on things for a long time. They are natural planners and imaginative problems solvers that are often good at being careful with facts. They are keen to research and gain knowledge on subjects in detail, often becoming an expert in the things that they learn.', '', 'I will work it out myself', 'Forgive yourself for not always reaching your own high standards.', 'Intense and serious, Barn owls are trying to make sense of their world and usually value routine and structure. They prefer interests that require precision and skill rather than team games and hobbies and enjoy the opportunity to create new ideas and opportunities. Barn owls like to learn by being shown and corrected privately.', 'At their best, they\'re clever, creative visionaries with the determination to achieve their goals, which means they may be considered distant, private and argumentative.', 'They\'re usually quite independent but can appear tougher than they really are. They often like to share their passions, ideas and beliefs.', 'Visionary, direct and organised. Detailed planners. Strategic and challenging. Like to stretch themselves and their team members. Tend to like and offer independence to their team members but will expect success in return.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=257ab3fbe01d4498ae19444713e1a6db&metadata=01', '', 1),
+(10, 3, 'Eagle', 'ENTJ', 'Eagles are symbols of power, leadership and strength. Often soaring high to generate new ideas and new ways to do things. Others are often willing to follow Eagles due to their good ideas and their determination to make them happen.', 'Eagles are natural entrepreneurs, using their imaginative and creative problem-solving skills to take charge of situations and people easily. They enjoy action and variety and are often the ones with the big ideas who suggest better ways of doing things.', '', 'I will be in charge', 'Take charge of the things you do best but do include ideas from others, especially when working in groups.', 'High-energy Eagles are natural leaders. Always on the go, they are usually ingenious and creative entrepreneurs. Eagles like to work with facts and focus on getting a task done.\r\nThey take great pride in their honesty and reliability, and in return prefer honest feedback to false compliments. Eagles sometimes need to be reminded that this approach isn\'t for everyone, often needing help to learn more about tact and other people\'s feelings.', 'Eagles are confident and often more mature than other people their age which can be seen by some as big-headed, but it isn\'t: it\'s being able to stick up for what they believe in. They can become rebellious and restless when bored and need a channel for their energy and go-for-it, problem-solving attitude.', 'They can be great fun to be with, though exhausting due to their drive and determination to lead and achieve things.', 'Energetic, visionary, direct and organised. Task-focused. Can be risk-takers.\r\nStrategic and challenging with a desire to stretch themselves and their teams. Tend to like and offer independence to their team members but will expect results in return. Most likely animal to lead from the front.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=20344f8b851a4371957af7b045ed60ce&metadata=01', '', 2),
+(11, 3, 'Falcon', 'ENTP', 'Falcons are the fastest animals in the world, flying up to about 120 miles per hour. They can also be fast with words and actions, moving quickly from idea to idea and task to task. Falcons migrate and often like to try out new experiences. When they speak, Falcons are loud.', 'Falcons are imaginative and spontaneous problem-solvers who love learning new skills. Alert, outspoken and always interesting company, they find it very easy to communiCate, making them natural negotiators. Falcons are accident-prone risk-takers who enjoy variety and action and who tend to leave things until the last minute. They get bored easily and soon like to move on to something new.', '', 'Everythings negotiable', 'Do not judge yourself too harshly; you can be your own worst critic.', 'Imaginative and creative, Falcons often have a great sense of humour and strive to be different with their own unique sense of style. They like nothing more than to push boundaries and enjoy negotiating changes in the rules.', 'They\'re adventurous, direct and assertive. They tend to ask why? Often popular but can be a threat to some teachers or adults who don\'t always appreciate their original thinking!', 'They try hard to impress their partner and they\'re usually witty and clever company.', 'Energetic, visionary, direct and flexible. Task-focused and can be risk takers. Generally keen to share their thoughts. Create a fast-paced and fun environment and like people who can \'fly by the seat of their pants\'. Tend to like and offer freedom and independence to their team members.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=2380c8c415f44f40925a97c5f924e66d&metadata=01', '', 3),
+(12, 3, 'Tawny Owl', 'INTP', 'Tawny owls are symbols of intelligence, determination and wisdom. They fly silently in the night and are often careful and quiet, speaking only when they have something interesting or useful to say.', 'Being natural inventors, Tawny owls love to learn new skills and try out new things. They enjoy tasks that require them to problem solve and use their imagination. Tawny owls pay attention to detail and are great at analysing and approaching things in a logical order.', '', 'I will analyse it to understand it.', 'Do not get lost inside your thoughts; involve others.', 'Tawny owls love learning, especially facts that help them understand how the world works. They enjoy competitive games, are very individualistic and are determined to do things their way.\r\nThey may not seek or need lots of physical attention, it doesn\'t mean they don\'t have feelings they just really like privacy and don\'t like being fussed over. Keen to question authority, they enjoy testing theories and ideas, including challenging their parents!', 'They\'re independent, quiet and flexible deep thinkers.', 'They usually share their ideas, passions and beliefs and like trying new things as a couple. They can be very self-critical.', 'Caring, quiet, personal, democratic, value and seek harmony, flexible. Quite rare as leaders (because they are not usually task-focused) and therefore can bring in original perspectives and approaches to their role.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=b4d472d1d1d14e459e0e7d07e793371a&metadata=01', '', 4),
+(13, 4, 'Cat', 'ISFP', 'Cats are popular and friendly, despite spending a lot of time on their own. They also tend to like exploring the outdoors.', 'Cats like to enjoy the here and now. Living in the moment, they find it easy to adapt and change their plans. They are popular team members but rarely push their views forward unless asked and like to be aware of people`s strengths and beliefs.', '', 'Can I play by myself for a while?', 'Try finishing the important things before starting new projects.', 'Cats are strongest in music or art and crafts, and often like solitary activities. They also love the outdoors and see life packed with adventures and experiences to try out and enjoy.\r\nCats may sometimes need to be encouraged to ask for help when they need it, rather than always trying to find their own solution.', 'They have an eye for quality and often have collections. They\'re often very close to their family and can feel nervous about leaving home. They\'re loyal friends, good at solving problems.', 'They\'re usually good fun to be with, though often like time on their own to recharge their batteries.', 'Caring, quiet, personal, democratic and flexible. Quite rare as leaders (because they are usually task-focused) and therefore can bring in original perspectives and approaches to their role. Tend to like and offer freedom and independence to their team members.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=d607aae8afb24bd4aa0b98698a503666&metadata=01', '', 1),
+(14, 4, 'Lion', 'ESFP', 'Lions are very sociable cats. They enjoy being with their families and relatives. Socialising and having fun as a way to be close to their loved ones. Lions are graceful and skillful in sport or leisure activities that interest them.', 'Lions are generous, friendly and great communicators so they are pretty good at knowing what is going on. As natural performers, they like to join in with people and have bundles of enthusiasm, making them popular team members.', '', 'Lets try this!', 'Do not play all of the time - recharge your batteries.', 'Often active and energetic, Lions enjoy activities and are usually the life and soul of a party, and if there isn\'t a party, they\'ll create one!\r\n\r\nLions love the outdoors, puddles, forests, you name it! They see life as full of adventures and experiences to try out and enjoy. Fun-loving Lions respond well to playing and surprises but they may need to be encouraged to rest and recharge their batteries from time to time!', 'They\'re usually popular and enthusiastic with a zest for life. They dislike routine and conflict - they may try to please everyone, which is difficult all of the time.', 'They\'re usually great fun to be with. They enjoy being with groups of people, not just as a couple.', 'Energetic, caring and flexible. People-focused. Can be risk takers. Generally keen to share their thoughts and create a fast-paced and fun environment. Tend to like and offer freedom and independence to their team members.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=718807c2c15c47e0aebf1486ef1a1d49&metadata=01', '', 2),
+(15, 4, 'Panther', 'ESTP', 'The Panther is a confident, fearless explorer, testing its skills in the jungle. They prefer action and variety. Can be fun to be with, but can bite (usually with a funny comment!), if things get boring.', 'On-the-spot problem solvers that can act and communicate quickly and decisively, Panthers find it easy to adapt to change. Panthers like to stand up for what they believe in even if others disagree - these skills also help them when trying to sell ideas and products to others.', '', 'Lets try this!', 'People can be tired just watching you whiz round. Plan and pick the projects worthy of your energy.', 'Curious about the world around them and experiencing as much of it as possible.\r\n\r\nOften the first to volunteer and take on a challenge, they are likely to be risk-takers so need to learn to think through the consequences of their actions before jumping in at the deep end.', 'They enjoy freedom and adventure, which can result in clashes with authority.', 'They\'re usually good fun to be with. They\'re full of energy and ideas.\r\nThey can be determined and easily become bored - so variety and action keep them happy.', 'Fun-loving and act on the spur of the moment. They like getting on with what needs to be done now rather than endlessly discussing the options and tend to focus on the excitement of the activity rather than rules and processes.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=681df4254d024623a8d87e6ca3c2cd34&metadata=01', '', 3),
+(16, 4, 'Tiger', 'ISTP', 'Tigers are rare, determined and strong. They are the largest cat and can be confident and assertive explorers, who enjoy finding out about the world around them.', 'Tigers are natural problem-solvers who like to work quietly and steadily on a number of things at once. They are flexible and like to try new ways to get things done.', '', 'I will work it out in my own time', 'Share your good ideas and humour around. Do not get wrapped up in your own thoughts and think you ca not ask for other peoples opinions or help.', 'Tigers love learning, especially facts that help them understand how the world works. They enjoy competitive games and are very individualistic and determined to do things their way.\r\nThey may not seek or need lots of physical attention, it doesn\'t mean they don\'t have feelings, they just really like privacy and don\'t like being fussed over. Keen to question authority, they enjoy testing theories and ideas, including challenging their parents!', 'They\'re honest and realistic with great common sense and a love for life. If someone doesn\'t make sense, they\'ll tell them so. This can sometimes make them seem stubborn and strong-willed.', 'They\'re usually good fun to be with, though may sometimes be too honest with their opinions for their own good.', 'Quiet and flexible, task-focused, can be risk-takers. Can keep their thoughts to themselves. Tend to like and offer freedom and independence to their team members.', 'https://www.snapchat.com/unlock/?type=SNAPCODE&uuid=c0bc5eb16b52401d88b4fe1e5fc8800f&metadata=01', '', 4);
 
 -- --------------------------------------------------------
 
@@ -458,63 +459,48 @@ INSERT INTO `dt_behaviour_master_animalmbti` (`ANMLMBTI_ID`, `ANML_ID`, `MBTI_ID
 (5, 2, 2, 1),
 (6, 2, 4, 2),
 (7, 2, 6, 3),
-(8, 2, 7, 4),
-(9, 3, 1, 1),
-(10, 3, 4, 2),
-(11, 3, 6, 3),
-(12, 3, 7, 4),
-(13, 4, 2, 1),
-(14, 4, 4, 2),
-(15, 4, 6, 3),
-(16, 4, 8, 4),
-(17, 5, 1, 1),
-(18, 5, 3, 2),
-(19, 5, 5, 3),
-(20, 5, 7, 4),
-(21, 6, 2, 1),
-(22, 6, 3, 2),
-(23, 6, 5, 3),
-(24, 6, 7, 4),
-(25, 7, 2, 1),
-(26, 7, 3, 2),
-(27, 7, 6, 3),
-(28, 7, 7, 4),
-(29, 8, 1, 1),
-(30, 8, 3, 2),
-(31, 8, 6, 3),
-(32, 8, 7, 4),
-(33, 9, 2, 1),
-(34, 9, 4, 2),
-(35, 9, 5, 3),
-(36, 9, 7, 4),
-(37, 10, 1, 1),
-(38, 10, 4, 2),
-(39, 10, 5, 3),
-(40, 10, 7, 4),
-(41, 11, 1, 1),
-(42, 11, 4, 2),
-(43, 11, 5, 3),
-(44, 11, 8, 4),
-(45, 12, 2, 1),
-(46, 12, 4, 2),
-(47, 12, 5, 3),
-(48, 12, 8, 4),
-(49, 13, 2, 1),
-(50, 13, 3, 2),
-(51, 13, 6, 3),
-(52, 13, 8, 4),
-(53, 14, 1, 1),
-(54, 14, 3, 2),
-(55, 14, 6, 3),
-(56, 14, 8, 4),
-(57, 15, 1, 1),
-(58, 15, 3, 2),
-(59, 15, 5, 3),
-(60, 15, 8, 4),
-(61, 16, 2, 1),
-(62, 16, 3, 2),
-(63, 16, 5, 3),
-(64, 16, 8, 4);
+(8, 2, 7, 4);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dt_behaviour_master_animalpathway`
+--
+
+CREATE TABLE `dt_behaviour_master_animalpathway` (
+  `ANMLPATHWAY_ID` int(11) NOT NULL,
+  `ANML_ID` int(11) NOT NULL,
+  `GPATHWAY_ID` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Animal pathway';
+
+--
+-- Dumping data for table `dt_behaviour_master_animalpathway`
+--
+
+INSERT INTO `dt_behaviour_master_animalpathway` (`ANMLPATHWAY_ID`, `ANML_ID`, `GPATHWAY_ID`) VALUES
+(1, 8, 8),
+(2, 10, 8),
+(3, 11, 9),
+(4, 7, 10),
+(5, 2, 10),
+(6, 9, 7),
+(7, 5, 3),
+(8, 13, 1),
+(9, 2, 1),
+(10, 7, 6),
+(11, 15, 5),
+(12, 6, 4),
+(13, 16, 2),
+(14, 13, 12),
+(15, 1, 12),
+(16, 1, 15),
+(17, 4, 15),
+(18, 1, 12),
+(19, 3, 11),
+(20, 11, 11),
+(21, 14, 14),
+(22, 15, 14),
+(23, 12, 13);
 
 -- --------------------------------------------------------
 
@@ -524,6 +510,7 @@ INSERT INTO `dt_behaviour_master_animalmbti` (`ANMLMBTI_ID`, `ANML_ID`, `MBTI_ID
 
 CREATE TABLE `dt_behaviour_master_mbti` (
   `MBTI_ID` int(11) NOT NULL,
+  `MBTIGROUP_ID` int(11) NOT NULL,
   `IND_LETTER` varchar(1) DEFAULT NULL,
   `IND_WORD` varchar(20) DEFAULT NULL,
   `IND_DESC` varchar(255) NOT NULL,
@@ -534,15 +521,36 @@ CREATE TABLE `dt_behaviour_master_mbti` (
 -- Dumping data for table `dt_behaviour_master_mbti`
 --
 
-INSERT INTO `dt_behaviour_master_mbti` (`MBTI_ID`, `IND_LETTER`, `IND_WORD`, `IND_DESC`, `IND_GROUP`) VALUES
-(1, 'E', 'Extraversion', '- gain energy from people or things around them\r\n- recharge their batteries by being active\r\n- be confident\r\n- be assertive', 1),
-(2, 'I', 'Introversion', '- gain energy from inside themselves\r\n- recharge their batteries by spending time alone\r\n- be careful\r\n- be good listeners', 1),
-(3, 'S', 'Sensing', '- have their feet on the ground\r\n- be good at thinking \'inside the box\'\r\n- be practical\r\n- be realistic\r\n- be sensible', 2),
-(4, 'N', 'Intuitive', '- like to think about how things could be changed\r\n- be good at thinking \'outside the box\'\r\n- be imaginative\r\n- be creative\r\n- be dreamers', 2),
-(5, 'T', 'Thinking', '- make decisions by doing the \'right thing\'\r\n- like fairness\r\n- be logical\r\n- be objective\r\n- be honest', 3),
-(6, 'F', 'Feeling', '- make decisions by considering how it will affect people\r\n- like to be liked\r\n- be sympathetic\r\n- be friendly\r\n- be caring', 3),
-(7, 'J', 'Judging', '- organise themselves\r\n- relax once things are complete\r\n- be logical\r\n- get things done\r\n- be on time and on schedule', 4),
-(8, 'P', 'Perceiving', '- be flexible\r\n- be able to relax with things left incomplete\r\n- be spontaneous\r\n- be open-minded', 4);
+INSERT INTO `dt_behaviour_master_mbti` (`MBTI_ID`, `MBTIGROUP_ID`, `IND_LETTER`, `IND_WORD`, `IND_DESC`, `IND_GROUP`) VALUES
+(1, 1, 'E', 'Extraversion', '<li>gain energy from people or things around them</li>\r\n<li>recharge their batteries by being active</li>\r\n<li>be confident</li>\r\n<li>be assertive</li>', 1),
+(2, 1, 'I', 'Introversion', '<li>gain energy from inside themselves</li>\r\n<li>recharge their batteries by spending time alone</li>\r\n<li>be careful</li>\r\n<li>be good listeners</li>', 1),
+(3, 2, 'S', 'Sensing', '<li>have their feet on the ground</li>\r\n<li>be good at thinking \'inside the box\'</li>\r\n<li>be practical</li>\r\n<li>be realistic</li>\r\n<li>be sensible</li>', 2),
+(4, 2, 'N', 'Intuitive', '<li>like to think about how things could be changed</li>\r\n<li>be good at thinking \'outside the box\'</li>\r\n<li>be imaginative</li>\r\n<li>be creative</li>\r\n<li>be dreamers</li>', 2),
+(5, 3, 'T', 'Thinking', '<li>make decisions by doing the \'right thing\'</li>\r\n<li>like fairness</li>\r\n<li>be logical</li>\r\n<li>be objective</li>\r\n<li>be honest</li>', 3),
+(6, 3, 'F', 'Feeling', '<li>make decisions by considering how it will affect people</li>\r\n<li>like to be liked</li>\r\n<li>be sympathetic</li>\r\n<li>be friendly</li>\r\n<li>be caring</li>', 3),
+(7, 4, 'J', 'Judging', '<li>organise themselves</li>\r\n<li>relax once things are complete</li>\r\n<li>be logical</li>\r\n<li>get things done</li>\r\n<li>be on time and on schedule</li>', 4),
+(8, 4, 'P', 'Perceiving', '<li>be flexible</li>\r\n<li>be able to relax with things left incomplete</li>\r\n<li>be spontaneous</li>\r\n<li>be open-minded</li>', 4);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dt_behaviour_master_mbtigroup`
+--
+
+CREATE TABLE `dt_behaviour_master_mbtigroup` (
+  `MBTIGROUP_ID` int(11) NOT NULL,
+  `MBTI_OBSERVATION` varchar(40) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `dt_behaviour_master_mbtigroup`
+--
+
+INSERT INTO `dt_behaviour_master_mbtigroup` (`MBTIGROUP_ID`, `MBTI_OBSERVATION`) VALUES
+(1, 'Extrovert or Introvert'),
+(2, 'Sensing or Intuitive'),
+(3, 'Thinking or Feeling'),
+(4, 'Judging or Perceiving');
 
 -- --------------------------------------------------------
 
@@ -552,19 +560,20 @@ INSERT INTO `dt_behaviour_master_mbti` (`MBTI_ID`, `IND_LETTER`, `IND_WORD`, `IN
 
 CREATE TABLE `dt_behaviour_master_question` (
   `QSTN_ID` int(11) NOT NULL,
-  `QUESTION` varchar(255) DEFAULT NULL,
-  `TAG_LINE` varchar(255) DEFAULT NULL
+  `QUESTION` varchar(100) NOT NULL,
+  `TAG_LINE` varchar(50) NOT NULL,
+  `ORDER_BY` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `dt_behaviour_master_question`
 --
 
-INSERT INTO `dt_behaviour_master_question` (`QSTN_ID`, `QUESTION`, `TAG_LINE`) VALUES
-(1, 'Where do you gain your energy from?', 'Outside or inside?'),
-(2, 'How do you take in information?', 'Do you look at the detail or the big picture?'),
-(3, 'How do you decide things?', 'With your head or your heart?'),
-(4, 'What is your attitude to life?', 'Planned or spontaneous?');
+INSERT INTO `dt_behaviour_master_question` (`QSTN_ID`, `QUESTION`, `TAG_LINE`, `ORDER_BY`) VALUES
+(1, 'Where do you gain your energy from?', 'Outside or inside?', 1),
+(2, 'How do you take in information?', 'Do you look at the detail or the big picture?', 2),
+(3, 'How do you decide things?', 'With your head or your heart?', 3),
+(4, 'What is your attitude to life?', 'Planned or spontaneous?', 4);
 
 -- --------------------------------------------------------
 
@@ -629,6 +638,29 @@ INSERT INTO `dt_behaviour_master_questionoption` (`OPTION_ID`, `QSTN_ID`, `MBTI_
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `dt_behaviour_master_question_old`
+--
+
+CREATE TABLE `dt_behaviour_master_question_old` (
+  `QSTN_ID` int(11) NOT NULL,
+  `QSTN_TEXT` varchar(100) NOT NULL,
+  `QSTN_SUBTEXT` varchar(50) NOT NULL,
+  `ORDER_BY` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `dt_behaviour_master_question_old`
+--
+
+INSERT INTO `dt_behaviour_master_question_old` (`QSTN_ID`, `QSTN_TEXT`, `QSTN_SUBTEXT`, `ORDER_BY`) VALUES
+(1, 'Where do you gain your energy from?', 'Outside or inside?', 1),
+(2, 'How do you take in information?', 'Do you look at the detail or the big picture?', 2),
+(3, 'How do you decide things?', 'With your head or your heart?', 3),
+(4, 'What is your attitude to life?', 'Planned or spontaneous?', 4);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `dt_behaviour_qstn_mbti`
 --
 
@@ -670,7 +702,129 @@ CREATE TABLE `dt_behaviour_user_animal` (
 --
 
 INSERT INTO `dt_behaviour_user_animal` (`USR_ANML_ID`, `USER_SID`, `ANML_ID`, `LAST_ATTEMPTED_ON`) VALUES
-(4, 'd6f1497a-dd62-4767-9290-8bc277f1458a', 3, '2021-03-10 07:44:28');
+(0, '46905afa-8782-4367-9cae-e7c2e48f3fcb', 4, '2021-03-31 06:26:55');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dt_global_master_cluster`
+--
+
+CREATE TABLE `dt_global_master_cluster` (
+  `GCLUSTER_ID` tinyint(4) NOT NULL,
+  `GCLUSTER_NAME` varchar(70) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `dt_global_master_cluster`
+--
+
+INSERT INTO `dt_global_master_cluster` (`GCLUSTER_ID`, `GCLUSTER_NAME`) VALUES
+(1, 'Agriculture, Food &amp; Natural Resources'),
+(2, 'Architecture &amp; Construction'),
+(3, 'Arts, Audio/Video Technology &amp; Communications'),
+(4, 'Business Management &amp; Administration'),
+(5, 'Education &amp; Training'),
+(6, 'Finance'),
+(7, 'Government &amp; Public Administration'),
+(8, 'Health Science'),
+(9, 'Hospitality &amp; Tourism'),
+(10, 'Human Services'),
+(11, 'Information Technology'),
+(12, 'Law, Public Safety, Corrections &amp; Security'),
+(13, 'Manufacturing'),
+(14, 'Marketing'),
+(15, 'Science, Technology, Engineering &amp; Mathematics'),
+(16, 'Transportation, Distribution &amp; Logistics');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dt_global_master_pathway`
+--
+
+CREATE TABLE `dt_global_master_pathway` (
+  `GPATHWAY_ID` int(11) NOT NULL,
+  `GCLUSTER_ID` tinyint(4) NOT NULL,
+  `GPATHWAY_NAME` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `dt_global_master_pathway`
+--
+
+INSERT INTO `dt_global_master_pathway` (`GPATHWAY_ID`, `GCLUSTER_ID`, `GPATHWAY_NAME`) VALUES
+(1, 1, 'Agribusiness Systems'),
+(2, 1, 'Animal Systems'),
+(3, 1, 'Environmental Service Systems'),
+(4, 1, 'Food Products and Processing Systems'),
+(5, 1, 'Natural Resources Systems'),
+(6, 1, 'Plant Systems'),
+(7, 1, 'Power, Structural & Technical Systems'),
+(8, 2, 'Construction'),
+(9, 2, 'Design/Pre-Construction'),
+(10, 2, 'Maintenance/Operations'),
+(11, 3, 'Journalism and Broadcasting'),
+(12, 3, 'Performing Arts'),
+(13, 3, 'Printing Technology'),
+(14, 3, 'Telecommunications'),
+(15, 3, 'Visual Arts'),
+(16, 4, 'Administrative Support'),
+(17, 4, 'Business Information Management'),
+(18, 4, 'General Management'),
+(19, 4, 'Human Resources Management'),
+(20, 4, 'Operations Management'),
+(21, 5, 'Administration and Administrative Support'),
+(22, 5, 'Professional Support Services'),
+(23, 5, 'Teaching/Training'),
+(24, 6, 'Accounting'),
+(25, 6, 'Banking Services'),
+(26, 6, 'Business Finance'),
+(27, 6, 'Insurance'),
+(28, 6, 'Securities & Investments'),
+(29, 7, 'Governance'),
+(30, 7, 'National Security'),
+(31, 7, 'Planning'),
+(32, 7, 'Public Management and Administration'),
+(33, 7, 'Regulation'),
+(34, 7, 'Revenue and Taxation'),
+(35, 8, 'Biotechnology Research and Development'),
+(36, 8, 'Diagnostic Services'),
+(37, 8, 'Health Informatics'),
+(38, 8, 'Support Services'),
+(39, 8, 'Therapeutic Services'),
+(40, 9, 'Lodging'),
+(41, 9, 'Recreation, Amusements & Attractions'),
+(42, 9, 'Restaurants and Food/Beverage Services'),
+(43, 9, 'Travel & Tourism'),
+(44, 10, 'Counseling & Mental Health Services'),
+(45, 10, 'Early Childhood Development & Services'),
+(46, 10, 'Family & Community Services'),
+(47, 10, 'Personal Care Services'),
+(48, 11, 'Information Support and Services'),
+(49, 11, 'Network Systems'),
+(50, 11, 'Programming and Software Development'),
+(51, 11, 'Web and Digital Communications'),
+(52, 12, 'Correction Services'),
+(53, 12, 'Emergency and Fire Management Services'),
+(54, 12, 'Law Enforcement Services'),
+(55, 12, 'Legal Services'),
+(56, 12, 'Security & Protective Services'),
+(57, 13, 'Maintenance, Installation & Repair'),
+(58, 13, 'Manufacturing Production Process Development'),
+(59, 13, 'Production'),
+(60, 13, 'Quality Assurance'),
+(61, 14, 'Marketing Communications'),
+(62, 14, 'Marketing Management'),
+(63, 14, 'Marketing Research'),
+(64, 14, 'Merchandising'),
+(65, 14, 'Professional Sales'),
+(66, 15, 'Engineering and Technology'),
+(67, 15, 'Science and Mathematics'),
+(68, 16, 'Facility and Mobile Equipment Maintenance'),
+(69, 16, 'Sales and Service'),
+(70, 16, 'Transportation Operations'),
+(71, 16, 'Transportation Systems/Infrastructure Planning, Management and Regulation');
 
 -- --------------------------------------------------------
 
@@ -681,6 +835,7 @@ INSERT INTO `dt_behaviour_user_animal` (`USR_ANML_ID`, `USER_SID`, `ANML_ID`, `L
 CREATE TABLE `dt_hhh_master_activity` (
   `DACTIVITY_ID` int(11) NOT NULL,
   `DOMAIN_ID` int(11) NOT NULL,
+  `DACTIVITYONET_NAME` varchar(120) NOT NULL,
   `DACTIVITY_NAME` varchar(100) NOT NULL,
   `DACTIVITY_KEY` varchar(10) NOT NULL,
   `DACTIVITY_DESC` varchar(255) NOT NULL
@@ -690,40 +845,40 @@ CREATE TABLE `dt_hhh_master_activity` (
 -- Dumping data for table `dt_hhh_master_activity`
 --
 
-INSERT INTO `dt_hhh_master_activity` (`DACTIVITY_ID`, `DOMAIN_ID`, `DACTIVITY_NAME`, `DACTIVITY_KEY`, `DACTIVITY_DESC`) VALUES
-(1, 1, 'Evaluating Information to Determine Compliance with Standards', '4.A.2.a.3', 'Using relevant information and individual judgment to determine whether events or processes comply with laws, regulations, or standards.'),
-(2, 1, 'Organizing, Planning, and Prioritizing Work', '4.A.2.b.6', 'Developing specific goals and plans to prioritize, organize, and accomplish your work.'),
-(3, 1, 'Analyzing Data or Information', '4.A.2.a.4', 'Identifying the underlying principles, reasons, or facts of information by breaking down information or data into separate parts.'),
-(4, 1, 'Processing Information', '4.A.2.a.2', 'Compiling, coding, categorizing, calculating, tabulating, auditing, or verifying information or data.'),
-(5, 1, 'Scheduling Work and Activities', '4.A.2.b.5', 'Scheduling events, programs, and activities, as well as the work of others.'),
-(6, 1, 'Judging the Qualities of Things, Services, or People', '4.A.2.a.1', 'Assessing the value, importance, or quality of things or people.'),
-(7, 1, 'Developing Objectives and Strategies', '4.A.2.b.4', 'Establishing long-range objectives and specifying the strategies and actions to achieve them.'),
-(8, 1, 'Thinking Creatively', '4.A.2.b.2', 'Developing, designing, or creating new applications, ideas, relationships, systems, or products, including artistic contributions.'),
-(9, 1, 'Making Decisions and Solving Problems', '4.A.2.b.1', 'Analyzing information and evaluating results to choose the best solution and solve problems.'),
-(10, 2, 'Provide Consultation and Advice to Others', '4.A.4.b.6', 'Providing guidance and expert advice to management or other groups on technical, systems-, or process-related topics.'),
-(11, 2, 'Monitoring and Controlling Resources', '4.A.4.c.3', 'Monitoring and controlling resources and overseeing the spending of money.'),
-(12, 2, 'Performing Administrative Activities', '4.A.4.c.1', 'Performing day-to-day administrative tasks such as maintaining information files and processing paperwork.'),
-(13, 2, 'Assisting and Caring for Others', '4.A.4.a.5', 'Providing personal assistance, medical attention, emotional support, or other personal care to others such as coworkers, customers, or patients.'),
-(14, 2, 'Coordinating the Work and Activities of Others', '4.A.4.b.1', 'Getting members of a group to work together to accomplish tasks.'),
-(15, 2, 'Establishing and Maintaining Interpersonal Relationships', '4.A.4.a.4', 'Developing constructive and cooperative working relationships with others, and maintaining them over time.'),
-(16, 2, 'Communicating with Supervisors, Peers, or Subordinates', '4.A.4.a.2', 'Providing information to supervisors, co-workers, and subordinates by telephone, in written form, e-mail, or in person.'),
-(17, 2, 'Guiding, Directing, and Motivating Subordinates', '4.A.4.b.4', 'Providing guidance and direction to subordinates, including setting performance standards and monitoring performance.'),
-(18, 2, 'Communicating with Persons Outside Organization', '4.A.4.a.3', 'Communicating with people outside the organization, representing the organization to customers, the public, government, and other external sources. This information can be exchanged in person, in writing, or by telephone or e-mail.'),
-(19, 2, 'Resolving Conflicts and Negotiating with Others', '4.A.4.a.7', 'Handling complaints, settling disputes, and resolving grievances and conflicts, or otherwise negotiating with others.'),
-(20, 2, 'Interpreting the Meaning of Information for Others', '4.A.4.a.1', 'Translating or explaining what information means and how it can be used.'),
-(21, 2, 'Coaching and Developing Others', '4.A.4.b.5', 'Identifying the developmental needs of others and coaching, mentoring, or otherwise helping others to improve their knowledge or skills.'),
-(22, 2, 'Selling or Influencing Others', '4.A.4.a.6', 'Convincing others to buy merchandise/goods or to otherwise change their minds or actions.'),
-(23, 2, 'Training and Teaching Others', '4.A.4.b.3', 'Identifying the educational needs of others, developing formal educational or training programs or classes, and teaching or instructing others.'),
-(24, 2, 'Staffing Organizational Units', '4.A.4.c.2', 'Recruiting, interviewing, selecting, hiring, and promoting employees in an organization.'),
-(25, 3, 'Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment', '4.A.3.b.2', 'Providing documentation, detailed instructions, drawings, or specifications to tell others about how devices, parts, equipment, or structures are to be fabricated, constructed, assembled, modified, maintained, or used.'),
-(26, 3, 'Documenting/Recording Information', '4.A.3.b.6', 'Entering, transcribing, recording, storing, or maintaining information in written or electronic/magnetic form.'),
-(27, 3, 'Repairing and Maintaining Electronic Equipment', '4.A.3.b.5', 'Servicing, repairing, calibrating, regulating, fine-tuning, or testing machines, devices, and equipment that operate primarily on the basis of electrical or electronic (not mechanical) principles.'),
-(28, 3, 'Repairing and Maintaining Mechanical Equipment', '4.A.3.b.4', 'Servicing, repairing, adjusting, and testing machines, devices, moving parts, and equipment that operate primarily on the basis of mechanical (not electronic) principles.'),
-(29, 3, 'Interacting With Computers', '4.A.3.b.1', 'Using computers and computer systems (including hardware and software) to program, write software, set up functions, enter data, or process information.'),
-(30, 3, 'Handling and Moving Objects', '4.A.3.a.2', 'Using hands and arms in handling, installing, positioning, and moving materials, and manipulating things.'),
-(31, 3, 'Operating Vehicles, Mechanized Devices, or Equipment', '4.A.3.a.4', 'Running, maneuvering, navigating, or driving vehicles or mechanized equipment, such as forklifts, passenger vehicles, aircraft, or water craft.'),
-(32, 3, 'Performing General Physical Activities', '4.A.3.a.1', 'Performing physical activities that require considerable use of your arms and legs and moving your whole body, such as climbing, lifting, balancing, walking, stooping, and handling of materials.'),
-(33, 3, 'Controlling Machines and Processes', '4.A.3.a.3', 'Using either control mechanisms or direct physical activity to operate machines or processes (not including computers or vehicles).');
+INSERT INTO `dt_hhh_master_activity` (`DACTIVITY_ID`, `DOMAIN_ID`, `DACTIVITYONET_NAME`, `DACTIVITY_NAME`, `DACTIVITY_KEY`, `DACTIVITY_DESC`) VALUES
+(1, 1, 'Evaluating Information to Determine Compliance with Standards', 'Meeting Standards and Following the Rules', '4.A.2.a.3', 'Using relevant information and individual judgment to determine whether events or processes comply with laws, regulations, or standards.'),
+(2, 1, 'Organizing, Planning, and Prioritizing Work', 'Organizing, Planning, and Prioritizing Work', '4.A.2.b.6', 'Developing specific goals and plans to prioritize, organize, and accomplish your work.'),
+(3, 1, 'Analyzing Data or Information', 'Looking at Data or Information', '4.A.2.a.4', 'Identifying the underlying principles, reasons, or facts of information by breaking down information or data into separate parts.'),
+(4, 1, 'Processing Information', 'Processing Information', '4.A.2.a.2', 'Compiling, coding, categorizing, calculating, tabulating, auditing, or verifying information or data.'),
+(5, 1, 'Scheduling Work and Activities', 'Scheduling Work and Activities', '4.A.2.b.5', 'Scheduling events, programs, and activities, as well as the work of others.'),
+(6, 1, 'Judging the Qualities of Things, Services, or People', 'Judging the Qualities of Things, Services or People', '4.A.2.a.1', 'Assessing the value, importance, or quality of things or people.'),
+(7, 1, 'Developing Objectives and Strategies', 'Strategizing', '4.A.2.b.4', 'Establishing long-range objectives and specifying the strategies and actions to achieve them.'),
+(8, 1, 'Thinking Creatively', 'Thinking Creatively', '4.A.2.b.2', 'Developing, designing, or creating new applications, ideas, relationships, systems, or products, including artistic contributions.'),
+(9, 1, 'Making Decisions and Solving Problems', 'Making Decisions and Solving Problems', '4.A.2.b.1', 'Analyzing information and evaluating results to choose the best solution and solve problems.'),
+(10, 2, 'Provide Consultation and Advice to Others', 'Advising Others', '4.A.4.b.6', 'Providing guidance and expert advice to management or other groups on technical, systems-, or process-related topics.'),
+(11, 2, 'Monitoring and Controlling Resources', 'Monitoring and Controlling Resources', '4.A.4.c.3', 'Monitoring and controlling resources and overseeing the spending of money.'),
+(12, 2, 'Performing Administrative Activities', 'Performing Administrative Activities', '4.A.4.c.1', 'Performing day-to-day administrative tasks such as maintaining information files and processing paperwork.'),
+(13, 2, 'Assisting and Caring for Others', 'Looking after others', '4.A.4.a.5', 'Providing personal assistance, medical attention, emotional support, or other personal care to others such as coworkers, customers, or patients.'),
+(14, 2, 'Coordinating the Work and Activities of Others', 'Managing Others', '4.A.4.b.1', 'Getting members of a group to work together to accomplish tasks.'),
+(15, 2, 'Establishing and Maintaining Interpersonal Relationships', 'Building and Strengthening Relationships', '4.A.4.a.4', 'Developing constructive and cooperative working relationships with others, and maintaining them over time.'),
+(16, 2, 'Communicating with Supervisors, Peers, or Subordinates', 'Communicating With the People in the Company You Work For', '4.A.4.a.2', 'Providing information to supervisors, co-workers, and subordinates by telephone, in written form, e-mail, or in person.'),
+(17, 2, 'Guiding, Directing, and Motivating Subordinates', 'Guiding and Motivating Team Members', '4.A.4.b.4', 'Providing guidance and direction to subordinates, including setting performance standards and monitoring performance.'),
+(18, 2, 'Communicating with Persons Outside Organization', 'Communicating with People Outside of the Company You Work For', '4.A.4.a.3', 'Communicating with people outside the organization, representing the organization to customers, the public, government, and other external sources. This information can be exchanged in person, in writing, or by telephone or e-mail.'),
+(19, 2, 'Resolving Conflicts and Negotiating with Others', 'Resolving Conflicts and Negotiating', '4.A.4.a.7', 'Handling complaints, settling disputes, and resolving grievances and conflicts, or otherwise negotiating with others.'),
+(20, 2, 'Interpreting the Meaning of Information for Others', 'Figuring Out the Meaning of Information for Others', '4.A.4.a.1', 'Translating or explaining what information means and how it can be used.'),
+(21, 2, 'Coaching and Developing Others', 'Helping others with Personal Development', '4.A.4.b.5', 'Identifying the developmental needs of others and coaching, mentoring, or otherwise helping others to improve their knowledge or skills.'),
+(22, 2, 'Selling or Influencing Others', 'Selling to Others', '4.A.4.a.6', 'Convincing others to buy merchandise/goods or to otherwise change their minds or actions.'),
+(23, 2, 'Training and Teaching Others', 'Training and Teaching Others', '4.A.4.b.3', 'Identifying the educational needs of others, developing formal educational or training programs or classes, and teaching or instructing others.'),
+(24, 2, 'Staffing Organizational Units', 'Human Resources', '4.A.4.c.2', 'Recruiting, interviewing, selecting, hiring, and promoting employees in an organization.'),
+(25, 3, 'Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment', 'Using Physical and Technical Equipment to Inform Others', '4.A.3.b.2', 'Providing documentation, detailed instructions, drawings, or specifications to tell others about how devices, parts, equipment, or structures are to be fabricated, constructed, assembled, modified, maintained, or used.'),
+(26, 3, 'Documenting/Recording Information', 'Using Computers to Record Information', '4.A.3.b.6', 'Entering, transcribing, recording, storing, or maintaining information in written or electronic/magnetic form.'),
+(27, 3, 'Repairing and Maintaining Electronic Equipment', 'Repairing Electronics', '4.A.3.b.5', 'Servicing, repairing, calibrating, regulating, fine-tuning, or testing machines, devices, and equipment that operate primarily on the basis of electrical or electronic (not mechanical) principles.'),
+(28, 3, 'Repairing and Maintaining Mechanical Equipment', 'Repairing Mechanical Equipment', '4.A.3.b.4', 'Servicing, repairing, adjusting, and testing machines, devices, moving parts, and equipment that operate primarily on the basis of mechanical (not electronic) principles.'),
+(29, 3, 'Interacting With Computers', 'Working With Computers', '4.A.3.b.1', 'Using computers and computer systems (including hardware and software) to program, write software, set up functions, enter data, or process information.'),
+(30, 3, 'Handling and Moving Objects', 'Handling and Moving Objects', '4.A.3.a.2', 'Using hands and arms in handling, installing, positioning, and moving materials, and manipulating things.'),
+(31, 3, 'Operating Vehicles, Mechanized Devices, or Equipment', 'Driving Cars and Other Vehicles', '4.A.3.a.4', 'Running, maneuvering, navigating, or driving vehicles or mechanized equipment, such as forklifts, passenger vehicles, aircraft, or water craft.'),
+(32, 3, 'Performing General Physical Activities', 'Physical Activities', '4.A.3.a.1', 'Performing physical activities that require considerable use of your arms and legs and moving your whole body, such as climbing, lifting, balancing, walking, stooping, and handling of materials.'),
+(33, 3, 'Controlling Machines and Processes', 'Operating Machinary', '4.A.3.a.3', 'Using either control mechanisms or direct physical activity to operate machines or processes (not including computers or vehicles).');
 
 -- --------------------------------------------------------
 
@@ -791,6 +946,28 @@ INSERT INTO `dt_hhh_master_animalactivity` (`ANMLACTIVITY_ID`, `ANML_ID`, `DACTI
 (46, 16, 3, '1.0'),
 (47, 16, 1, '2.0'),
 (48, 16, 2, '3.0');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `dt_hhh_master_animaldomain`
+--
+
+CREATE TABLE `dt_hhh_master_animaldomain` (
+  `ANMLDOMAIN_ID` int(11) NOT NULL,
+  `ANML_ID` int(11) NOT NULL,
+  `DOMAIN_ID` int(11) NOT NULL,
+  `ORDER_BY` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `dt_hhh_master_animaldomain`
+--
+
+INSERT INTO `dt_hhh_master_animaldomain` (`ANMLDOMAIN_ID`, `ANML_ID`, `DOMAIN_ID`, `ORDER_BY`) VALUES
+(1, 1, 1, 1),
+(2, 1, 2, 2),
+(3, 1, 3, 3);
 
 -- --------------------------------------------------------
 
@@ -1003,6 +1180,8 @@ CREATE TABLE `dt_skill_master_skill` (
   `SKILL_DEF` varchar(100) NOT NULL,
   `SKILL_DESC` text NOT NULL,
   `MBTI_ID` int(1) NOT NULL COMMENT 'MBTI_LETTER',
+  `SKILL_VIDEMBED` text NOT NULL,
+  `SKILL_IMG` varchar(40) NOT NULL,
   `SKILL_ORDER` tinyint(3) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -1010,15 +1189,15 @@ CREATE TABLE `dt_skill_master_skill` (
 -- Dumping data for table `dt_skill_master_skill`
 --
 
-INSERT INTO `dt_skill_master_skill` (`SKILL_ID`, `SKILL_NAME`, `SKILL_DEF`, `SKILL_DESC`, `MBTI_ID`, `SKILL_ORDER`) VALUES
-(1, 'Listening', 'The receiving, retaining and processing of information or ideas', 'This skill is all about being able to effectively receive information - whether it comes from customers, colleagues or stakeholders.  Initially, the skill steps concentrate on being able to listen effectively to others - including remembering short instructions, understanding why others are communicating and recording important information.  Individuals then focus on how they demonstrate that they are listening effectively, thinking about body language, open questioning and summarising and rephrasing.  Beyond that, the focus is on being aware of how they might be being influenced by a speaker, through tone and language.  The final steps are about critical listening - comparing perspectives, identifying biases, evaluating ideas and being objective.', 2, 4),
-(2, 'Speaking', 'The oral transmission of information or ideas', 'This skill is all about how to communicate effectively with others, being mindful of whether they are talking to customers, colleagues or other stakeholders and in different settings.  Initially, this skill focuses on being able to speak clearly - first with well known individuals and small groups and then with those who are not known.  The next stage is about being an effective speaker by making points logically, by thinking about what listeners already know and using appropriate language, tone and gesture.  Beyond that, individuals focus on speaking engagingly through use of facts and examples, visual aids, and their expression and gesture.  Beyond that stage, speakers will be adaptive to the response of their listeners and ready for different scenarios. The final steps focus on speaking influentially - using structure, examples, facts and vision to persuade listeners.', 1, 6),
-(3, 'Problem Solving', 'The ability to find a solution to a situation or challenge', 'This skill focuses on how to solve problems, recognising that while part of Problem Solving is technical know-how and experience, there are also transferable tools that individuals can develop and use.  The first steps focus on being able to follow instructions to complete tasks, seeking help and extra information if needed. The next stage focuses on being able to explore problems by creating and assessing different potential solutions. This includes more complex problems, without a simple technical solution.  Beyond this, the focus is on exploring complex solutions - thinking about causes and effects, generating options, and evaluating those options. This extends into analysis using logical reasoning and hypotheses.  Finally, individuals implement strategic plans to solve complex problems, assess their success, and draw out learning for the future.', 3, 5),
-(4, 'Creativity', 'The use of imagination and the generation of new ideas', 'Creativity is the complement to Problem Solving, and is about generating innovations or ideas which can then be honed through the problem-solving process.  The first few steps focus on the individual\'s confidence in imagining different situations and sharing their ideas.  The focus is then on generating ideas - using a clear brief, making improvements to something that already exists and combining concepts.  Individuals then apply creativity in the context of their work and their wider life. They can build off this to develop ideas using tools like mind mapping, questioning, and considering different perspectives.  The most advanced steps focus on building effective innovation in group settings and by seeking out varied experiences and stimuli. Finally, individuals support others to innovate, by sharing tools, identifying the right tools for the situation and through coaching.', 4, 2),
-(5, 'Staying Positive', 'The ability to use tactics and strategies to overcome setbacks and achieve goals', 'This skill is all about individuals being equipped to manage their emotions effectively and being able to remain motivated, and ultimately to motivate others, even when facing setbacks.  The early steps focus on identifying emotions - particularly feeling positive or negative. Building off that is the ability to keep trying - and then staying calm, thinking about what went wrong, and trying to cheer up and encourage others.  The focus then turns to identifying new opportunities in difficult situations, sharing those, and adapting or creating plans accordingly. At more advanced steps, individuals identify and manage risks and gains in opportunities.  Finally, individuals support others to stay positive by managing their own response, helping others to see opportunities and creating plans to achieve them.', 8, 7),
-(6, 'Aiming High', 'The ability to set clear, tangible goals and devise a robust route to achieving them', 'This skill is about being able to plan effectively - both to achieve organisational goals, and also to set their own personal development targets. Initially, this is about knowing when something is too difficult, and having a sense of what doing well looks like for an individual.  The focus is then about working with care and attention, taking pride in success and having a positive approach to new challenges. Building on this, individuals set goals for themselves, informed by an understanding of what is needed, and then be able to order and prioritise tasks, secure resources and involve others effectively.  At the higher steps, the focus is creating plans informed by an individual\'s skill set, with clear targets, and building on external views. At the most advanced level, individuals develop long-term strategies. These are informed by an assessment of internal and external factors, structured through regular milestones and feedback loops.', 7, 1),
-(7, 'Leadership', 'Supporting, encouraging and developing others to achieve a shared goal', 'This skill is relevant not only for individuals in positions of management with formal power, but also for individuals working with peers in teams.  At the earliest stages, the focus is on basic empathy - understanding their own feelings, being able to share them, and recognising the feelings of others. The focus is on managing - dividing up tasks, managing time and sharing resources, managing group discussions and dealing with disagreements.  Beyond that, individuals build their awareness of their own strengths and weaknesses, and those of their teams. This allows them to allocate tasks effectively. They then build techniques to mentor, coach and motivate others. At the highest steps, individuals will be able to reflect on their own leadership style and understand its effect on others.  \r\nUltimately, they should be able to build on their strengths and mitigate their weaknesses, and adapt their leadership style to the situation.', 5, 3),
-(8, 'Teamwork', 'Working cooperatively with others towards achieving a shared goal', 'This skill applies to working within both formal and informal teams, and also with customers, clients or other stakeholders. Initially, this is about individuals fulfilling expectations around being positive, behaving appropriately, being timely and reliable and taking responsibility. This extends to understanding and respecting diversity of others\' cultures, beliefs and backgrounds.  The next steps focus on making a contribution to a team through group decision making recognising the value of others\' ideas and encourage others to contribute too.Beyond that, individuals improve their teams through managing conflict and building relationships beyond the immediate team. At the top steps, individuals focus on how they influence their team through suggesting improvements and learning lessons from setbacks.  Ultimately, individuals support the team by evaluating others strengths and weaknesses and bringing in external expertise and relationships.', 6, 8);
+INSERT INTO `dt_skill_master_skill` (`SKILL_ID`, `SKILL_NAME`, `SKILL_DEF`, `SKILL_DESC`, `MBTI_ID`, `SKILL_VIDEMBED`, `SKILL_IMG`, `SKILL_ORDER`) VALUES
+(1, 'Listening', 'The receiving, retaining and processing of information or ideas', 'This skill is all about being able to effectively receive information - whether it comes from customers, colleagues or stakeholders.  Initially, the skill steps concentrate on being able to listen effectively to others - including remembering short instructions, understanding why others are communicating and recording important information.  Individuals then focus on how they demonstrate that they are listening effectively, thinking about body language, open questioning and summarising and rephrasing.  Beyond that, the focus is on being aware of how they might be being influenced by a speaker, through tone and language.  The final steps are about critical listening - comparing perspectives, identifying biases, evaluating ideas and being objective.', 2, '<script src=\"https://fast.wistia.com/embed/medias/g8xdd12rd4.jsonp\" async></script><script src=\"https://fast.wistia.com/assets/external/E-v1.js\" async></script><div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\"><div class=\"wistia_responsive_wrapper\" style=\"height:100%;left:0;position:absolute;top:0;width:100%;\"><div class=\"wistia_embed wistia_async_g8xdd12rd4 videoFoam=true\" style=\"height:100%;position:relative;width:100%\"><div class=\"wistia_swatch\" style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\"><img src=\"https://fast.wistia.com/embed/medias/g8xdd12rd4/swatch\" style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\" alt=\"\" aria-hidden=\"true\" onload=\"this.parentNode.style.opacity=1;\" /></div></div></div></div>', 'thumb_default.jpg', 4),
+(2, 'Speaking', 'The oral transmission of information or ideas', 'This skill is all about how to communicate effectively with others, being mindful of whether they are talking to customers, colleagues or other stakeholders and in different settings.  Initially, this skill focuses on being able to speak clearly - first with well known individuals and small groups and then with those who are not known.  The next stage is about being an effective speaker by making points logically, by thinking about what listeners already know and using appropriate language, tone and gesture.  Beyond that, individuals focus on speaking engagingly through use of facts and examples, visual aids, and their expression and gesture.  Beyond that stage, speakers will be adaptive to the response of their listeners and ready for different scenarios. The final steps focus on speaking influentially - using structure, examples, facts and vision to persuade listeners.', 1, '<script src=\"https://fast.wistia.com/embed/medias/wtx0nr7ju7.jsonp\" async></script><script src=\"https://fast.wistia.com/assets/external/E-v1.js\" async></script><div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\"><div class=\"wistia_responsive_wrapper\" style=\"height:100%;left:0;position:absolute;top:0;width:100%;\"><div class=\"wistia_embed wistia_async_wtx0nr7ju7 videoFoam=true\" style=\"height:100%;position:relative;width:100%\"><div class=\"wistia_swatch\" style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\"><img src=\"https://fast.wistia.com/embed/medias/wtx0nr7ju7/swatch\" style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\" alt=\"\" aria-hidden=\"true\" onload=\"this.parentNode.style.opacity=1;\" /></div></div></div></div>', 'thumb_default.jpg', 6),
+(3, 'Problem Solving', 'The ability to find a solution to a situation or challenge', 'This skill focuses on how to solve problems, recognising that while part of Problem Solving is technical know-how and experience, there are also transferable tools that individuals can develop and use.  The first steps focus on being able to follow instructions to complete tasks, seeking help and extra information if needed. The next stage focuses on being able to explore problems by creating and assessing different potential solutions. This includes more complex problems, without a simple technical solution.  Beyond this, the focus is on exploring complex solutions - thinking about causes and effects, generating options, and evaluating those options. This extends into analysis using logical reasoning and hypotheses.  Finally, individuals implement strategic plans to solve complex problems, assess their success, and draw out learning for the future.', 3, '<script src=\"https://fast.wistia.com/embed/medias/folu9nyiog.jsonp\" async></script><script src=\"https://fast.wistia.com/assets/external/E-v1.js\" async></script><div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\"><div class=\"wistia_responsive_wrapper\" style=\"height:100%;left:0;position:absolute;top:0;width:100%;\"><div class=\"wistia_embed wistia_async_folu9nyiog videoFoam=true\" style=\"height:100%;position:relative;width:100%\"><div class=\"wistia_swatch\" style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\"><img src=\"https://fast.wistia.com/embed/medias/folu9nyiog/swatch\" style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\" alt=\"\" aria-hidden=\"true\" onload=\"this.parentNode.style.opacity=1;\" /></div></div></div></div>', 'thumb_default.jpg', 5),
+(4, 'Creativity', 'The use of imagination and the generation of new ideas', 'Creativity is the complement to Problem Solving, and is about generating innovations or ideas which can then be honed through the problem-solving process.  The first few steps focus on the individual\'s confidence in imagining different situations and sharing their ideas.  The focus is then on generating ideas - using a clear brief, making improvements to something that already exists and combining concepts.  Individuals then apply creativity in the context of their work and their wider life. They can build off this to develop ideas using tools like mind mapping, questioning, and considering different perspectives.  The most advanced steps focus on building effective innovation in group settings and by seeking out varied experiences and stimuli. Finally, individuals support others to innovate, by sharing tools, identifying the right tools for the situation and through coaching.', 4, '<script src=\"https://fast.wistia.com/embed/medias/286k7x10zg.jsonp\" async></script><script src=\"https://fast.wistia.com/assets/external/E-v1.js\" async></script><div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\"><div class=\"wistia_responsive_wrapper\" style=\"height:100%;left:0;position:absolute;top:0;width:100%;\"><div class=\"wistia_embed wistia_async_286k7x10zg videoFoam=true\" style=\"height:100%;position:relative;width:100%\"><div class=\"wistia_swatch\" style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\"><img src=\"https://fast.wistia.com/embed/medias/286k7x10zg/swatch\" style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\" alt=\"\" aria-hidden=\"true\" onload=\"this.parentNode.style.opacity=1;\" /></div></div></div></div>', 'thumb_default.jpg', 2),
+(5, 'Staying Positive', 'The ability to use tactics and strategies to overcome setbacks and achieve goals', 'This skill is all about individuals being equipped to manage their emotions effectively and being able to remain motivated, and ultimately to motivate others, even when facing setbacks.  The early steps focus on identifying emotions - particularly feeling positive or negative. Building off that is the ability to keep trying - and then staying calm, thinking about what went wrong, and trying to cheer up and encourage others.  The focus then turns to identifying new opportunities in difficult situations, sharing those, and adapting or creating plans accordingly. At more advanced steps, individuals identify and manage risks and gains in opportunities.  Finally, individuals support others to stay positive by managing their own response, helping others to see opportunities and creating plans to achieve them.', 8, '<script src=\"https://fast.wistia.com/embed/medias/dzwf6mz7k4.jsonp\" async></script><script src=\"https://fast.wistia.com/assets/external/E-v1.js\" async></script><div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\"><div class=\"wistia_responsive_wrapper\" style=\"height:100%;left:0;position:absolute;top:0;width:100%;\"><div class=\"wistia_embed wistia_async_dzwf6mz7k4 videoFoam=true\" style=\"height:100%;position:relative;width:100%\"><div class=\"wistia_swatch\" style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\"><img src=\"https://fast.wistia.com/embed/medias/dzwf6mz7k4/swatch\" style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\" alt=\"\" aria-hidden=\"true\" onload=\"this.parentNode.style.opacity=1;\" /></div></div></div></div>', 'thumb_default.jpg', 7),
+(6, 'Aiming High', 'The ability to set clear, tangible goals and devise a robust route to achieving them', 'This skill is about being able to plan effectively - both to achieve organisational goals, and also to set their own personal development targets. Initially, this is about knowing when something is too difficult, and having a sense of what doing well looks like for an individual.  The focus is then about working with care and attention, taking pride in success and having a positive approach to new challenges. Building on this, individuals set goals for themselves, informed by an understanding of what is needed, and then be able to order and prioritise tasks, secure resources and involve others effectively.  At the higher steps, the focus is creating plans informed by an individual\'s skill set, with clear targets, and building on external views. At the most advanced level, individuals develop long-term strategies. These are informed by an assessment of internal and external factors, structured through regular milestones and feedback loops.', 7, '<script src=\"https://fast.wistia.com/embed/medias/67f4qr5jod.jsonp\" async></script><script src=\"https://fast.wistia.com/assets/external/E-v1.js\" async></script><div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\"><div class=\"wistia_responsive_wrapper\" style=\"height:100%;left:0;position:absolute;top:0;width:100%;\"><div class=\"wistia_embed wistia_async_67f4qr5jod videoFoam=true\" style=\"height:100%;position:relative;width:100%\"><div class=\"wistia_swatch\" style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\"><img src=\"https://fast.wistia.com/embed/medias/67f4qr5jod/swatch\" style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\" alt=\"\" aria-hidden=\"true\" onload=\"this.parentNode.style.opacity=1;\" /></div></div></div></div>', 'thumb_default.jpg', 1),
+(7, 'Leadership', 'Supporting, encouraging and developing others to achieve a shared goal', 'This skill is relevant not only for individuals in positions of management with formal power, but also for individuals working with peers in teams.  At the earliest stages, the focus is on basic empathy - understanding their own feelings, being able to share them, and recognising the feelings of others. The focus is on managing - dividing up tasks, managing time and sharing resources, managing group discussions and dealing with disagreements.  Beyond that, individuals build their awareness of their own strengths and weaknesses, and those of their teams. This allows them to allocate tasks effectively. They then build techniques to mentor, coach and motivate others. At the highest steps, individuals will be able to reflect on their own leadership style and understand its effect on others.  \r\nUltimately, they should be able to build on their strengths and mitigate their weaknesses, and adapt their leadership style to the situation.', 5, '<script src=\"https://fast.wistia.com/embed/medias/mnwnga920f.jsonp\" async></script><script src=\"https://fast.wistia.com/assets/external/E-v1.js\" async></script><div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\"><div class=\"wistia_responsive_wrapper\" style=\"height:100%;left:0;position:absolute;top:0;width:100%;\"><div class=\"wistia_embed wistia_async_mnwnga920f videoFoam=true\" style=\"height:100%;position:relative;width:100%\"><div class=\"wistia_swatch\" style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\"><img src=\"https://fast.wistia.com/embed/medias/mnwnga920f/swatch\" style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\" alt=\"\" aria-hidden=\"true\" onload=\"this.parentNode.style.opacity=1;\" /></div></div></div></div>', 'thumb_default.jpg', 3),
+(8, 'Teamwork', 'Working cooperatively with others towards achieving a shared goal', 'This skill applies to working within both formal and informal teams, and also with customers, clients or other stakeholders. Initially, this is about individuals fulfilling expectations around being positive, behaving appropriately, being timely and reliable and taking responsibility. This extends to understanding and respecting diversity of others\' cultures, beliefs and backgrounds.  The next steps focus on making a contribution to a team through group decision making recognising the value of others\' ideas and encourage others to contribute too.Beyond that, individuals improve their teams through managing conflict and building relationships beyond the immediate team. At the top steps, individuals focus on how they influence their team through suggesting improvements and learning lessons from setbacks.  Ultimately, individuals support the team by evaluating others strengths and weaknesses and bringing in external expertise and relationships.', 6, '<script src=\"https://fast.wistia.com/embed/medias/5crnmxtndt.jsonp\" async></script><script src=\"https://fast.wistia.com/assets/external/E-v1.js\" async></script><div class=\"wistia_responsive_padding\" style=\"padding:56.25% 0 0 0;position:relative;\"><div class=\"wistia_responsive_wrapper\" style=\"height:100%;left:0;position:absolute;top:0;width:100%;\"><div class=\"wistia_embed wistia_async_5crnmxtndt videoFoam=true\" style=\"height:100%;position:relative;width:100%\"><div class=\"wistia_swatch\" style=\"height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;\"><img src=\"https://fast.wistia.com/embed/medias/5crnmxtndt/swatch\" style=\"filter:blur(5px);height:100%;object-fit:contain;width:100%;\" alt=\"\" aria-hidden=\"true\" onload=\"this.parentNode.style.opacity=1;\" /></div></div></div></div>', 'thumb_default.jpg', 8);
 
 -- --------------------------------------------------------
 
@@ -1089,6 +1268,7 @@ CREATE TABLE `dt_skill_master_skillonet` (
   `SKILLONET_ID` int(11) NOT NULL,
   `SKILLTYPE_ID` int(11) NOT NULL,
   `SKILLONET_NAME` varchar(100) NOT NULL,
+  `SKILLONET_KEY` varchar(20) NOT NULL,
   `SKILLONET_DESC` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -1096,31 +1276,31 @@ CREATE TABLE `dt_skill_master_skillonet` (
 -- Dumping data for table `dt_skill_master_skillonet`
 --
 
-INSERT INTO `dt_skill_master_skillonet` (`SKILLONET_ID`, `SKILLTYPE_ID`, `SKILLONET_NAME`, `SKILLONET_DESC`) VALUES
-(1, 1, 'Management of Financial Resources', 'Determining how money will be spent to get the work done, and accounting for these expenditures.'),
-(2, 1, 'Management of Material Resources', 'Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work.'),
-(3, 1, 'Management of Personnel Resources', 'Motivating, developing, and directing people as they work, identifying the best people for the job.'),
-(4, 1, 'Time Management', 'Managing one\'s own time and the time of others.'),
-(5, 2, 'Systems Analysis', 'Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes.'),
-(6, 2, 'Systems Evaluation', 'Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system.'),
-(7, 2, 'Judgment and Decision Making', 'Considering the relative costs and benefits of potential actions to choose the most appropriate one.'),
-(8, 3, 'Monitoring', 'Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action.'),
-(9, 3, 'Active Learning', 'Understanding the implications of new information for both current and future problem-solving and decision-making.'),
-(10, 3, 'Learning Strategies', 'Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things.'),
-(11, 3, 'Writing', 'Communicating effectively in writing as appropriate for the needs of the audience.'),
-(12, 3, 'Speaking', 'Talking to others to convey information effectively.'),
-(13, 3, 'Active Listening', 'Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times.'),
-(14, 3, 'Critical Thinking', 'Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions or approaches to problems.'),
-(15, 3, 'Mathematics', 'Using mathematics to solve problems.'),
-(16, 3, 'Science', 'Using scientific rules and methods to solve problems.'),
-(17, 3, 'Reading Comprehension', 'Understanding written sentences and paragraphs in work related documents.'),
-(18, 4, 'Persuasion', 'Persuading others to change their minds or behavior.'),
-(19, 4, 'Social Perceptiveness', 'Being aware of others\' reactions and understanding why they react as they do.'),
-(20, 4, 'Instructing', 'Teaching others how to do something.'),
-(21, 4, 'Service Orientation', 'Actively looking for ways to help people.'),
-(22, 4, 'Negotiation', 'Bringing others together and trying to reconcile differences.'),
-(23, 4, 'Coordination', 'Adjusting actions in relation to others\' actions.'),
-(24, 5, 'Complex Problem Solving', 'Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions');
+INSERT INTO `dt_skill_master_skillonet` (`SKILLONET_ID`, `SKILLTYPE_ID`, `SKILLONET_NAME`, `SKILLONET_KEY`, `SKILLONET_DESC`) VALUES
+(1, 1, 'Management of Financial Resources', '2.B.5.b', 'Determining how money will be spent to get the work done, and accounting for these expenditures.'),
+(2, 1, 'Management of Material Resources', '2.B.5.c', 'Obtaining and seeing to the appropriate use of equipment, facilities, and materials needed to do certain work.'),
+(3, 1, 'Management of Personnel Resources', '2.B.5.d', 'Motivating, developing, and directing people as they work, identifying the best people for the job.'),
+(4, 1, 'Time Management', '2.B.5.a', 'Managing one\'s own time and the time of others.'),
+(5, 2, 'Systems Analysis', '2.B.4.g', 'Determining how a system should work and how changes in conditions, operations, and the environment will affect outcomes.'),
+(6, 2, 'Systems Evaluation', '2.B.4.h', 'Identifying measures or indicators of system performance and the actions needed to improve or correct performance, relative to the goals of the system.'),
+(7, 2, 'Judgment and Decision Making', '2.B.4.e', 'Considering the relative costs and benefits of potential actions to choose the most appropriate one.'),
+(8, 3, 'Monitoring', '2.A.2.d', 'Monitoring/Assessing performance of yourself, other individuals, or organizations to make improvements or take corrective action.'),
+(9, 3, 'Active Learning', '2.A.2.b', 'Understanding the implications of new information for both current and future problem-solving and decision-making.'),
+(10, 3, 'Learning Strategies', '2.A.2.c', 'Selecting and using training/instructional methods and procedures appropriate for the situation when learning or teaching new things.'),
+(11, 3, 'Writing', '2.A.1.c', 'Communicating effectively in writing as appropriate for the needs of the audience.'),
+(12, 3, 'Speaking', '2.A.1.d', 'Talking to others to convey information effectively.'),
+(13, 3, 'Active Listening', '2.A.1.b', 'Giving full attention to what other people are saying, taking time to understand the points being made, asking questions as appropriate, and not interrupting at inappropriate times.'),
+(14, 3, 'Critical Thinking', '2.A.2.a', 'Using logic and reasoning to identify the strengths and weaknesses of alternative solutions, conclusions or approaches to problems.'),
+(15, 3, 'Mathematics', '2.C.4.a', 'Using mathematics to solve problems.'),
+(16, 3, 'Science', '2.A.1.f', 'Using scientific rules and methods to solve problems.'),
+(17, 3, 'Reading Comprehension', '2.A.1.a', 'Understanding written sentences and paragraphs in work related documents.'),
+(18, 4, 'Persuasion', '2.B.1.c', 'Persuading others to change their minds or behavior.'),
+(19, 4, 'Social Perceptiveness', '2.B.1.a', 'Being aware of others\' reactions and understanding why they react as they do.'),
+(20, 4, 'Instructing', '2.B.1.e', 'Teaching others how to do something.'),
+(21, 4, 'Service Orientation', '2.B.1.f', 'Actively looking for ways to help people.'),
+(22, 4, 'Negotiation', '2.B.1.d', 'Bringing others together and trying to reconcile differences.'),
+(23, 4, 'Coordination', '2.B.1.b', 'Adjusting actions in relation to others\' actions.'),
+(24, 5, 'Complex Problem Solving', '2.B.2.i', 'Identifying complex problems and reviewing related information to develop and evaluate options and implement solutions');
 
 -- --------------------------------------------------------
 
@@ -1130,19 +1310,20 @@ INSERT INTO `dt_skill_master_skillonet` (`SKILLONET_ID`, `SKILLTYPE_ID`, `SKILLO
 
 CREATE TABLE `dt_skill_master_skilltype` (
   `SKILLTYPE_ID` int(11) NOT NULL,
-  `SKILLTYPE_NAME` varchar(40) NOT NULL
+  `SKILLTYPE_NAME` varchar(40) NOT NULL,
+  `SKILLTYPE_DESC` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `dt_skill_master_skilltype`
 --
 
-INSERT INTO `dt_skill_master_skilltype` (`SKILLTYPE_ID`, `SKILLTYPE_NAME`) VALUES
-(1, 'Resource Management '),
-(2, 'Systems'),
-(3, 'Basic'),
-(4, 'Social'),
-(5, 'Complex Problem Solving');
+INSERT INTO `dt_skill_master_skilltype` (`SKILLTYPE_ID`, `SKILLTYPE_NAME`, `SKILLTYPE_DESC`) VALUES
+(1, 'Resource Management ', 'Developed capacities used to allocate resources efficiently'),
+(2, 'Systems', 'Developed capacities used to understand, monitor, and improve socio-technical systems'),
+(3, 'Basic', 'Developed capacities that facilitate learning or the more rapid acquisition of knowledge'),
+(4, 'Social', 'Developed capacities used to work with people to achieve goals'),
+(5, 'Complex Problem Solving', 'Developed capacities used to solve novel, ill-defined problems in complex, real-world settings');
 
 -- --------------------------------------------------------
 
@@ -1172,13 +1353,15 @@ ALTER TABLE `cm_adm_master_country`
 --
 ALTER TABLE `dt_behaviour_master_animal`
   ADD PRIMARY KEY (`ANML_ID`),
-  ADD UNIQUE KEY `ANML_ALIAS` (`ANML_ALIAS`);
+  ADD UNIQUE KEY `ANML_ALIAS` (`ANML_ALIAS`),
+  ADD KEY `FK_ANMLGRP_ID` (`ANMLGRP_ID`);
 
 --
 -- Indexes for table `dt_behaviour_master_animalceleb`
 --
 ALTER TABLE `dt_behaviour_master_animalceleb`
-  ADD PRIMARY KEY (`ANMLCELEB_ID`);
+  ADD PRIMARY KEY (`ANMLCELEB_ID`),
+  ADD KEY `FK_ANML_ID` (`ANML_ID`);
 
 --
 -- Indexes for table `dt_behaviour_master_animalgroup`
@@ -1190,13 +1373,30 @@ ALTER TABLE `dt_behaviour_master_animalgroup`
 -- Indexes for table `dt_behaviour_master_animalmbti`
 --
 ALTER TABLE `dt_behaviour_master_animalmbti`
-  ADD PRIMARY KEY (`ANMLMBTI_ID`);
+  ADD PRIMARY KEY (`ANMLMBTI_ID`),
+  ADD KEY `FK_animalmbti_ANML_ID` (`ANML_ID`),
+  ADD KEY `FK_animalmbti_MBTI_ID` (`MBTI_ID`);
+
+--
+-- Indexes for table `dt_behaviour_master_animalpathway`
+--
+ALTER TABLE `dt_behaviour_master_animalpathway`
+  ADD PRIMARY KEY (`ANMLPATHWAY_ID`),
+  ADD KEY `FK_animalpathway_GPATHWAYID` (`GPATHWAY_ID`),
+  ADD KEY `FK_animalpathway_ANMLID` (`ANML_ID`);
 
 --
 -- Indexes for table `dt_behaviour_master_mbti`
 --
 ALTER TABLE `dt_behaviour_master_mbti`
-  ADD PRIMARY KEY (`MBTI_ID`);
+  ADD PRIMARY KEY (`MBTI_ID`),
+  ADD KEY `FK_MBTIGROUP_ID` (`MBTIGROUP_ID`);
+
+--
+-- Indexes for table `dt_behaviour_master_mbtigroup`
+--
+ALTER TABLE `dt_behaviour_master_mbtigroup`
+  ADD PRIMARY KEY (`MBTIGROUP_ID`);
 
 --
 -- Indexes for table `dt_behaviour_master_question`
@@ -1208,7 +1408,15 @@ ALTER TABLE `dt_behaviour_master_question`
 -- Indexes for table `dt_behaviour_master_questionoption`
 --
 ALTER TABLE `dt_behaviour_master_questionoption`
-  ADD PRIMARY KEY (`OPTION_ID`);
+  ADD PRIMARY KEY (`OPTION_ID`),
+  ADD KEY `FK_QSTN_ID` (`QSTN_ID`),
+  ADD KEY `FK_questionoption_MBTI_ID` (`MBTI_ID`);
+
+--
+-- Indexes for table `dt_behaviour_master_question_old`
+--
+ALTER TABLE `dt_behaviour_master_question_old`
+  ADD PRIMARY KEY (`QSTN_ID`);
 
 --
 -- Indexes for table `dt_behaviour_qstn_mbti`
@@ -1225,6 +1433,18 @@ ALTER TABLE `dt_behaviour_user_animal`
   ADD UNIQUE KEY `USER_SID` (`USER_SID`);
 
 --
+-- Indexes for table `dt_global_master_cluster`
+--
+ALTER TABLE `dt_global_master_cluster`
+  ADD PRIMARY KEY (`GCLUSTER_ID`);
+
+--
+-- Indexes for table `dt_global_master_pathway`
+--
+ALTER TABLE `dt_global_master_pathway`
+  ADD PRIMARY KEY (`GPATHWAY_ID`);
+
+--
 -- Indexes for table `dt_hhh_master_activity`
 --
 ALTER TABLE `dt_hhh_master_activity`
@@ -1235,13 +1455,24 @@ ALTER TABLE `dt_hhh_master_activity`
 -- Indexes for table `dt_hhh_master_animalactivity`
 --
 ALTER TABLE `dt_hhh_master_animalactivity`
-  ADD PRIMARY KEY (`ANMLACTIVITY_ID`) USING BTREE;
+  ADD PRIMARY KEY (`ANMLACTIVITY_ID`) USING BTREE,
+  ADD KEY `FK_animalactivity_DACTIVITY_ID` (`DACTIVITY_ID`),
+  ADD KEY `FK_animalactivity_ANML_ID` (`ANML_ID`);
+
+--
+-- Indexes for table `dt_hhh_master_animaldomain`
+--
+ALTER TABLE `dt_hhh_master_animaldomain`
+  ADD PRIMARY KEY (`ANMLDOMAIN_ID`);
 
 --
 -- Indexes for table `dt_hhh_master_domain`
 --
 ALTER TABLE `dt_hhh_master_domain`
-  ADD PRIMARY KEY (`DOMAIN_ID`);
+  ADD PRIMARY KEY (`DOMAIN_ID`),
+  ADD UNIQUE KEY `DOMAIN_KEY` (`DOMAIN_KEY`),
+  ADD UNIQUE KEY `DOMAIN_AREA` (`DOMAIN_AREA`),
+  ADD UNIQUE KEY `DOMAIN_NAME` (`DOMAIN_NAME`);
 
 --
 -- Indexes for table `dt_interest_master_pathway`
@@ -1254,7 +1485,9 @@ ALTER TABLE `dt_interest_master_pathway`
 -- Indexes for table `dt_interest_master_pathwaymapper`
 --
 ALTER TABLE `dt_interest_master_pathwaymapper`
-  ADD PRIMARY KEY (`INTERESTMAPPER_ID`) USING BTREE;
+  ADD PRIMARY KEY (`INTERESTMAPPER_ID`) USING BTREE,
+  ADD KEY `FK_pathwaymapper_INTEREST_ID` (`INTEREST_ID`),
+  ADD KEY `FK_pathwaymapper_INTERESTONET_ID` (`INTERESTONET_ID`);
 
 --
 -- Indexes for table `dt_interest_master_pathwayonet`
@@ -1267,26 +1500,32 @@ ALTER TABLE `dt_interest_master_pathwayonet`
 -- Indexes for table `dt_interest_user_pathway`
 --
 ALTER TABLE `dt_interest_user_pathway`
-  ADD PRIMARY KEY (`USR_INTEREST_ID`) USING BTREE,
+  ADD PRIMARY KEY (`USR_INTEREST_ID`),
   ADD UNIQUE KEY `USER_SID` (`USER_SID`);
 
 --
 -- Indexes for table `dt_skill_master_skill`
 --
 ALTER TABLE `dt_skill_master_skill`
-  ADD PRIMARY KEY (`SKILL_ID`);
+  ADD PRIMARY KEY (`SKILL_ID`),
+  ADD KEY `FK_skill_MBTI_ID` (`MBTI_ID`);
 
 --
 -- Indexes for table `dt_skill_master_skillmapper`
 --
 ALTER TABLE `dt_skill_master_skillmapper`
-  ADD PRIMARY KEY (`SKILLMAPPER_ID`);
+  ADD PRIMARY KEY (`SKILLMAPPER_ID`),
+  ADD KEY `FK_skillmapper_SKILL_ID` (`SKILL_ID`),
+  ADD KEY `FK_skillmapper_SKILLONET_ID` (`SKILLONET_ID`);
 
 --
 -- Indexes for table `dt_skill_master_skillonet`
 --
 ALTER TABLE `dt_skill_master_skillonet`
-  ADD PRIMARY KEY (`SKILLONET_ID`);
+  ADD PRIMARY KEY (`SKILLONET_ID`),
+  ADD UNIQUE KEY `SKILLONET_NAME` (`SKILLONET_NAME`),
+  ADD UNIQUE KEY `SKILLONET_KEY` (`SKILLONET_KEY`),
+  ADD KEY `FK_SKILLTYPE_ID` (`SKILLTYPE_ID`);
 
 --
 -- Indexes for table `dt_skill_master_skilltype`
@@ -1298,7 +1537,7 @@ ALTER TABLE `dt_skill_master_skilltype`
 -- Indexes for table `dt_skill_user_skill`
 --
 ALTER TABLE `dt_skill_user_skill`
-  ADD PRIMARY KEY (`USR_SKILL_ID`) USING BTREE,
+  ADD PRIMARY KEY (`USR_SKILL_ID`),
   ADD UNIQUE KEY `USER_SID` (`USER_SID`);
 
 --
@@ -1327,13 +1566,25 @@ ALTER TABLE `dt_behaviour_master_animalgroup`
 -- AUTO_INCREMENT for table `dt_behaviour_master_animalmbti`
 --
 ALTER TABLE `dt_behaviour_master_animalmbti`
-  MODIFY `ANMLMBTI_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
+  MODIFY `ANMLMBTI_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `dt_behaviour_master_animalpathway`
+--
+ALTER TABLE `dt_behaviour_master_animalpathway`
+  MODIFY `ANMLPATHWAY_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `dt_behaviour_master_mbti`
 --
 ALTER TABLE `dt_behaviour_master_mbti`
   MODIFY `MBTI_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `dt_behaviour_master_mbtigroup`
+--
+ALTER TABLE `dt_behaviour_master_mbtigroup`
+  MODIFY `MBTIGROUP_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `dt_behaviour_master_question`
@@ -1348,16 +1599,28 @@ ALTER TABLE `dt_behaviour_master_questionoption`
   MODIFY `OPTION_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
+-- AUTO_INCREMENT for table `dt_behaviour_master_question_old`
+--
+ALTER TABLE `dt_behaviour_master_question_old`
+  MODIFY `QSTN_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT for table `dt_behaviour_qstn_mbti`
 --
 ALTER TABLE `dt_behaviour_qstn_mbti`
   MODIFY `QSTN_MBTI_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT for table `dt_behaviour_user_animal`
+-- AUTO_INCREMENT for table `dt_global_master_cluster`
 --
-ALTER TABLE `dt_behaviour_user_animal`
-  MODIFY `USR_ANML_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+ALTER TABLE `dt_global_master_cluster`
+  MODIFY `GCLUSTER_ID` tinyint(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+
+--
+-- AUTO_INCREMENT for table `dt_global_master_pathway`
+--
+ALTER TABLE `dt_global_master_pathway`
+  MODIFY `GPATHWAY_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT for table `dt_hhh_master_activity`
@@ -1370,6 +1633,12 @@ ALTER TABLE `dt_hhh_master_activity`
 --
 ALTER TABLE `dt_hhh_master_animalactivity`
   MODIFY `ANMLACTIVITY_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+
+--
+-- AUTO_INCREMENT for table `dt_hhh_master_animaldomain`
+--
+ALTER TABLE `dt_hhh_master_animaldomain`
+  MODIFY `ANMLDOMAIN_ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `dt_hhh_master_domain`
@@ -1436,10 +1705,76 @@ ALTER TABLE `dt_skill_user_skill`
 --
 
 --
--- Constraints for table `dt_hhh_master_activity`
+-- Constraints for table `dt_behaviour_master_animal`
 --
-ALTER TABLE `dt_hhh_master_activity`
-  ADD CONSTRAINT `dt_hhh_master_activity_ibfk_1` FOREIGN KEY (`DOMAIN_ID`) REFERENCES `dt_hhh_master_domain` (`DOMAIN_ID`);
+ALTER TABLE `dt_behaviour_master_animal`
+  ADD CONSTRAINT `FK_ANMLGRP_ID` FOREIGN KEY (`ANMLGRP_ID`) REFERENCES `dt_behaviour_master_animalgroup` (`ANMLGRP_ID`);
+
+--
+-- Constraints for table `dt_behaviour_master_animalceleb`
+--
+ALTER TABLE `dt_behaviour_master_animalceleb`
+  ADD CONSTRAINT `FK_ANML_ID` FOREIGN KEY (`ANML_ID`) REFERENCES `dt_behaviour_master_animal` (`ANML_ID`);
+
+--
+-- Constraints for table `dt_behaviour_master_animalmbti`
+--
+ALTER TABLE `dt_behaviour_master_animalmbti`
+  ADD CONSTRAINT `FK_animalmbti_ANML_ID` FOREIGN KEY (`ANML_ID`) REFERENCES `dt_behaviour_master_animal` (`ANML_ID`),
+  ADD CONSTRAINT `FK_animalmbti_MBTI_ID` FOREIGN KEY (`MBTI_ID`) REFERENCES `dt_behaviour_master_mbti` (`MBTI_ID`);
+
+--
+-- Constraints for table `dt_behaviour_master_animalpathway`
+--
+ALTER TABLE `dt_behaviour_master_animalpathway`
+  ADD CONSTRAINT `FK_animalpathway_ANMLID` FOREIGN KEY (`ANML_ID`) REFERENCES `dt_behaviour_master_animal` (`ANML_ID`),
+  ADD CONSTRAINT `FK_animalpathway_GPATHWAYID` FOREIGN KEY (`GPATHWAY_ID`) REFERENCES `dt_global_master_pathway` (`GPATHWAY_ID`);
+
+--
+-- Constraints for table `dt_behaviour_master_mbti`
+--
+ALTER TABLE `dt_behaviour_master_mbti`
+  ADD CONSTRAINT `FK_MBTIGROUP_ID` FOREIGN KEY (`MBTIGROUP_ID`) REFERENCES `dt_behaviour_master_mbtigroup` (`MBTIGROUP_ID`);
+
+--
+-- Constraints for table `dt_behaviour_master_questionoption`
+--
+ALTER TABLE `dt_behaviour_master_questionoption`
+  ADD CONSTRAINT `FK_QSTN_ID` FOREIGN KEY (`QSTN_ID`) REFERENCES `dt_behaviour_master_question_old` (`QSTN_ID`),
+  ADD CONSTRAINT `FK_questionoption_MBTI_ID` FOREIGN KEY (`MBTI_ID`) REFERENCES `dt_behaviour_master_mbti` (`MBTI_ID`);
+
+--
+-- Constraints for table `dt_hhh_master_animalactivity`
+--
+ALTER TABLE `dt_hhh_master_animalactivity`
+  ADD CONSTRAINT `FK_animalactivity_ANML_ID` FOREIGN KEY (`ANML_ID`) REFERENCES `dt_behaviour_master_animal` (`ANML_ID`),
+  ADD CONSTRAINT `FK_animalactivity_DACTIVITY_ID` FOREIGN KEY (`DACTIVITY_ID`) REFERENCES `dt_hhh_master_activity` (`DACTIVITY_ID`);
+
+--
+-- Constraints for table `dt_interest_master_pathwaymapper`
+--
+ALTER TABLE `dt_interest_master_pathwaymapper`
+  ADD CONSTRAINT `FK_pathwaymapper_INTERESTONET_ID` FOREIGN KEY (`INTERESTONET_ID`) REFERENCES `dt_interest_master_pathwayonet` (`INTERESTONET_ID`),
+  ADD CONSTRAINT `FK_pathwaymapper_INTEREST_ID` FOREIGN KEY (`INTEREST_ID`) REFERENCES `dt_interest_master_pathway` (`INTEREST_ID`);
+
+--
+-- Constraints for table `dt_skill_master_skill`
+--
+ALTER TABLE `dt_skill_master_skill`
+  ADD CONSTRAINT `FK_skill_MBTI_ID` FOREIGN KEY (`MBTI_ID`) REFERENCES `dt_behaviour_master_mbti` (`MBTI_ID`);
+
+--
+-- Constraints for table `dt_skill_master_skillmapper`
+--
+ALTER TABLE `dt_skill_master_skillmapper`
+  ADD CONSTRAINT `FK_skillmapper_SKILLONET_ID` FOREIGN KEY (`SKILLONET_ID`) REFERENCES `dt_skill_master_skillonet` (`SKILLONET_ID`),
+  ADD CONSTRAINT `FK_skillmapper_SKILL_ID` FOREIGN KEY (`SKILL_ID`) REFERENCES `dt_skill_master_skill` (`SKILL_ID`);
+
+--
+-- Constraints for table `dt_skill_master_skillonet`
+--
+ALTER TABLE `dt_skill_master_skillonet`
+  ADD CONSTRAINT `FK_SKILLTYPE_ID` FOREIGN KEY (`SKILLTYPE_ID`) REFERENCES `dt_skill_master_skilltype` (`SKILLTYPE_ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
