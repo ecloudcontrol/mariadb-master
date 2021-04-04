@@ -16,5 +16,5 @@ restore:
        file: lyc_veative.sql
     user: veative
     password: $MYSQL_VEATIVE_PASSWORD    # password of the 'user' above.
-    token: 20210325-0919   # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN).
+    token: 20210404-1710   # The restore token to be validated before restoring the database. (Same as TEARDOWN_TOKEN).
   
