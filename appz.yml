@@ -33,4 +33,4 @@ properties:
       vault: MYSQL_REPLICATION_PASSWORD
     MYSQL_ROOT_PASSWORD:
       vault: MYSQL_ROOT_PASSWORD_KEY
-    revision : 26
+    revision : 0
