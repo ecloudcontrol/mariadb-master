@@ -26,6 +26,7 @@ volumes:
     mount: /appz/backup
     name: backup
     size: 5Gi
+    matchLabels: false
   
 properties:
     MYSQL_REPLICATION_USER: replication
