@@ -1,17 +1,17 @@
 app:
     name: mariadb Master
     code: mariadbmaster
-    notify: appzdev@cloudbourne.co
+    notify: rniranjan@cloudbourne.co
 
 build:
-    version: 10.4
+    version: 11.4
     env: DEV
     build_file: none
     output_files: output/*.zip
-    image_template: mariadb_master-10.4
+    image_template: mariadb_master-11.4
 
 deploy:
-    context: alpha/DEV
+    context: plantmaster/DEV
     type: statefulset
     replicas: 1
     port:
@@ -31,8 +31,6 @@ properties:
     MYSQL_REPLICATION_USER: replication
     MYSQL_REPLICATION_PASSWORD:
       vault: MYSQL_REPLICATION_PASSWORD
-    MYSQL_WORDPRESS_PASSWORD:
-      vault: MYSQL_WORDPRESS_PASSWORD
     MYSQL_ROOT_PASSWORD:
       vault: MYSQL_ROOT_PASSWORD_KEY
     revision : 26
