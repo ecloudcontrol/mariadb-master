@@ -19,10 +19,12 @@ deploy:
 
 volumes:
   - claim: mariadb-master-data
-    mount: /appz/data
+    class: linode-block-storage
+    mount: /appz/data/mysql
     name: data
     size: 5Gi
   - claim: mariadb-master-backup
+    class: linode-block-storage
     mount: /appz/backup
     name: backup
     size: 5Gi
