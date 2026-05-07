@@ -19,13 +19,13 @@ deploy:
 
 volumes:
   - claim: mariadb-master-data
-    class: "linode-block-storage-retain"
+    class: "linode-block-storage"
     mount: /appz/data/mysql
     name: data
     size: 5Gi
     matchLabels: false
   - claim: mariadb-master-backup
-    class: "linode-block-storage-retain"
+    class: "linode-block-storage"
     mount: /appz/backup
     name: backup
     size: 5Gi
@@ -37,4 +37,4 @@ properties:
       vault: MYSQL_REPLICATION_PASSWORD
     MYSQL_ROOT_PASSWORD:
       vault: MYSQL_ROOT_PASSWORD_KEY
-    revision : 5
+    revision : 6
